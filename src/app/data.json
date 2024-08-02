@@ -1,0 +1,3543 @@
+{
+  "DeveloperOptionsStore": {
+    "initialize": "function",
+    "isTracingRequests": "boolean",
+    "isForcedCanary": "boolean",
+    "isLoggingGatewayEvents": "boolean",
+    "isLoggingOverlayEvents": "boolean",
+    "isLoggingAnalyticsEvents": "boolean",
+    "isAxeEnabled": "boolean",
+    "cssDebuggingEnabled": "boolean",
+    "sourceMapsEnabled": "boolean",
+    "isAnalyticsDebuggerEnabled": "boolean",
+    "isBugReporterEnabled": "boolean",
+    "isIdleStatusIndicatorEnabled": "boolean",
+    "appDirectoryIncludesInactiveCollections": "boolean",
+    "getDebugOptionsHeaderValue": "function"
+  },
+  "BrowserHandoffStore": {
+    "initialize": "function",
+    "isHandoffAvailable": "function",
+    "user": "undefined",
+    "key": "undefined"
+  },
+  "AuthenticationStore": {
+    "initialize": "function",
+    "getEmail": "function",
+    "getLogin": "function",
+    "didVerifyFail": "function",
+    "getVerifyErrors": "function",
+    "didVerifySucceed": "function",
+    "getLoginStatus": "function",
+    "getRegisterStatus": "function",
+    "getId": "function",
+    "getSessionId": "function",
+    "getAuthSessionIdHash": "function",
+    "getStaticAuthSessionId": "function",
+    "getToken": "function",
+    "isAuthenticated": "function",
+    "getFingerprint": "function",
+    "getAnalyticsToken": "function",
+    "getErrors": "function",
+    "getMFATicket": "function",
+    "getMFASMS": "function",
+    "getMFATotp": "function",
+    "getMFABackup": "function",
+    "getMFAWebAuthn": "function",
+    "getMFAMethods": "function",
+    "hasTOTPEnabled": "function",
+    "hasSMSEnabled": "function",
+    "hasWebAuthnEnabled": "function",
+    "getMaskedPhone": "function",
+    "getCredentials": "function",
+    "getVerifyingUserId": "function",
+    "getCurrentRegistrationOptions": "function",
+    "allowLogoutRedirect": "function",
+    "getWebAuthnChallenge": "function",
+    "getSuspendedUserToken": "function",
+    "getIsPasswordlessActive": "function"
+  },
+  "AuthInviteStore": { "getGuild": "function" },
+  "GuildMemberCountStore": {
+    "getMemberCounts": "function",
+    "getMemberCount": "function",
+    "getOnlineCount": "function"
+  },
+  "GuildStore": {
+    "getGuild": "function",
+    "getGuilds": "function",
+    "getGuildIds": "function",
+    "getGuildCount": "function",
+    "isLoaded": "function",
+    "getGeoRestrictedGuilds": "function",
+    "getAllGuildsRoles": "function",
+    "getRoles": "function",
+    "getRole": "function"
+  },
+  "ExperimentStore": {
+    "initialize": "function",
+    "loadCache": "function",
+    "takeSnapshot": "function",
+    "hasLoadedExperiments": "boolean",
+    "hasRegisteredExperiment": "function",
+    "getUserExperimentDescriptor": "function",
+    "getGuildExperimentDescriptor": "function",
+    "getUserExperimentBucket": "function",
+    "getGuildExperimentBucket": "function",
+    "getAllUserExperimentDescriptors": "function",
+    "getGuildExperiments": "function",
+    "getLoadedUserExperiment": "function",
+    "getLoadedGuildExperiment": "function",
+    "getRecentExposures": "function",
+    "getRegisteredExperiments": "function",
+    "getAllExperimentOverrideDescriptors": "function",
+    "getExperimentOverrideDescriptor": "function",
+    "getAllExperimentAssignments": "function",
+    "getSerializedState": "function",
+    "hasExperimentTrackedExposure": "function"
+  },
+  "SelectivelySyncedUserSettingsStore": {
+    "initialize": "function",
+    "getState": "function",
+    "shouldSync": "function",
+    "getTextSettings": "function",
+    "getAppearanceSettings": "function"
+  },
+  "UserSettingsProtoStore": {
+    "initialize": "function",
+    "getState": "function",
+    "computeState": "function",
+    "hasLoaded": "function",
+    "settings": "object",
+    "frecencyWithoutFetchingLatest": "object",
+    "wasMostRecentUpdateFromServer": "boolean",
+    "getFullState": "function",
+    "getGuildFolders": "function",
+    "getGuildRecentsDismissedAt": "function",
+    "getDismissedGuildContent": "function",
+    "getGuildsProto": "function"
+  },
+  "UserSettingsOverridesStore": {
+    "initialize": "function",
+    "getState": "function",
+    "getAppliedOverrideReasonKey": "function",
+    "getOverride": "function"
+  },
+  "AccessibilityStore": {
+    "initialize": "function",
+    "fontScale": "number",
+    "fontSize": "number",
+    "isFontScaledUp": "boolean",
+    "isFontScaledDown": "boolean",
+    "fontScaleClass": "string",
+    "zoom": "number",
+    "isZoomedIn": "boolean",
+    "isZoomedOut": "boolean",
+    "keyboardModeEnabled": "boolean",
+    "colorblindMode": "boolean",
+    "lowContrastMode": "boolean",
+    "saturation": "number",
+    "contrast": "number",
+    "desaturateUserColors": "boolean",
+    "forcedColorsModalSeen": "boolean",
+    "keyboardNavigationExplainerModalSeen": "boolean",
+    "messageGroupSpacing": "number",
+    "isMessageGroupSpacingIncreased": "boolean",
+    "isMessageGroupSpacingDecreased": "boolean",
+    "isSubmitButtonEnabled": "boolean",
+    "syncProfileThemeWithUserTheme": "boolean",
+    "systemPrefersReducedMotion": "string",
+    "rawPrefersReducedMotion": "string",
+    "useReducedMotion": "boolean",
+    "systemForcedColors": "string",
+    "syncForcedColors": "boolean",
+    "useForcedColors": "boolean",
+    "systemPrefersContrast": "string",
+    "systemPrefersCrossfades": "boolean",
+    "alwaysShowLinkDecorations": "boolean",
+    "roleStyle": "string",
+    "hideTags": "boolean",
+    "getUserAgnosticState": "function"
+  },
+  "StreamerModeStore": {
+    "initialize": "function",
+    "getState": "function",
+    "getSettings": "function",
+    "enabled": "boolean",
+    "autoToggle": "boolean",
+    "hideInstantInvites": "boolean",
+    "hidePersonalInformation": "boolean",
+    "disableSounds": "boolean",
+    "disableNotifications": "boolean",
+    "enableContentProtection": "boolean"
+  },
+  "OverridePremiumTypeStore": {
+    "initialize": "function",
+    "getPremiumTypeOverride": "function",
+    "getPremiumTypeActual": "function",
+    "getCreatedAtOverride": "function",
+    "getState": "function",
+    "premiumType": "undefined"
+  },
+  "UserStore": {
+    "initialize": "function",
+    "takeSnapshot": "function",
+    "handleLoadCache": "function",
+    "getUserStoreVersion": "function",
+    "getUser": "function",
+    "getUsers": "function",
+    "forEach": "function",
+    "findByTag": "function",
+    "filter": "function",
+    "getCurrentUser": "function"
+  },
+  "I18nLoaderStore": { "isLoading": "function", "getError": "function" },
+  "LocaleStore": { "initialize": "function", "locale": "string" },
+  "StageInstanceStore": {
+    "getStageInstanceByChannel": "function",
+    "isLive": "function",
+    "isPublic": "function",
+    "getStageInstancesByGuild": "function",
+    "getAllStageInstances": "function"
+  },
+  "FavoriteStore": {
+    "initialize": "function",
+    "getFavoriteChannels": "function",
+    "favoriteServerMuted": "boolean",
+    "isFavorite": "function",
+    "getFavorite": "function",
+    "getCategoryRecord": "function",
+    "getNickname": "function"
+  },
+  "ChannelStore": {
+    "initialize": "function",
+    "hasChannel": "function",
+    "getBasicChannel": "function",
+    "getChannel": "function",
+    "loadAllGuildAndPrivateChannelsFromDisk": "function",
+    "getChannelIds": "function",
+    "getMutablePrivateChannels": "function",
+    "getMutableBasicGuildChannelsForGuild": "function",
+    "getMutableGuildChannelsForGuild": "function",
+    "getSortedPrivateChannels": "function",
+    "getDMFromUserId": "function",
+    "getDMChannelFromUserId": "function",
+    "getMutableDMsByUserIds": "function",
+    "getDMUserIds": "function",
+    "getPrivateChannelsVersion": "function",
+    "getGuildChannelsVersion": "function",
+    "getAllThreadsForParent": "function",
+    "getInitialOverlayState": "function",
+    "getDebugInfo": "function"
+  },
+  "ImpersonateStore": {
+    "hasViewingRoles": "function",
+    "isViewingRoles": "function",
+    "getViewingRoles": "function",
+    "getViewingRolesTimestamp": "function",
+    "getData": "function",
+    "isFullServerPreview": "function",
+    "isOptInEnabled": "function",
+    "isOnboardingEnabled": "function",
+    "getViewingChannels": "function",
+    "getOnboardingResponses": "function",
+    "getMemberOptions": "function",
+    "isChannelOptedIn": "function",
+    "isViewingServerShop": "function",
+    "getImpersonateType": "function",
+    "getBackNavigationSection": "function"
+  },
+  "GuildMemberStore": {
+    "initialize": "function",
+    "getMutableAllGuildsAndMembers": "function",
+    "memberOf": "function",
+    "getNicknameGuildsMapping": "function",
+    "getNicknames": "function",
+    "isMember": "function",
+    "isGuestOrLurker": "function",
+    "isCurrentUserGuest": "function",
+    "getMemberIds": "function",
+    "getMembers": "function",
+    "getTrueMember": "function",
+    "getMember": "function",
+    "getSelfMember": "function",
+    "getNick": "function",
+    "getCommunicationDisabledUserMap": "function",
+    "getCommunicationDisabledVersion": "function",
+    "getPendingRoleUpdates": "function",
+    "getMemberRoleWithPendingUpdates": "function",
+    "getMemberVersion": "function"
+  },
+  "LurkingStore": {
+    "initialize": "function",
+    "setHistorySnapshot": "function",
+    "getHistorySnapshot": "function",
+    "lurkingGuildIds": "function",
+    "mostRecentLurkedGuildId": "function",
+    "isLurking": "function",
+    "getLurkingSource": "function",
+    "getLoadId": "function"
+  },
+  "JoinedThreadsStore": {
+    "hasJoined": "function",
+    "joinTimestamp": "function",
+    "flags": "function",
+    "getInitialOverlayState": "function",
+    "getMuteConfig": "function",
+    "getMutedThreads": "function",
+    "isMuted": "function"
+  },
+  "LibraryApplicationStatisticsStore": {
+    "applicationStatistics": "object",
+    "lastFetched": "object",
+    "getGameDuration": "function",
+    "getLastPlayedDateTime": "function",
+    "hasApplicationStatistic": "function",
+    "getCurrentUserStatisticsForApplication": "function",
+    "getQuickSwitcherScoreForApplication": "function"
+  },
+  "GuildDiscoveryStore": {
+    "initialize": "function",
+    "isFetching": "function",
+    "isFetchingSearch": "function",
+    "hasSearchError": "function",
+    "getDiscoverableGuilds": "function",
+    "getCurrentCategoryId": "function",
+    "getCurrentHomepageCategoryId": "function",
+    "getSearchIndex": "function",
+    "getMostRecentQuery": "function",
+    "getTopCategoryCounts": "function",
+    "getSeenGuildIds": "function",
+    "getLoadId": "function",
+    "getIsReady": "function"
+  },
+  "PermissionStore": {
+    "initialize": "function",
+    "getChannelPermissions": "function",
+    "getGuildPermissions": "function",
+    "getGuildPermissionProps": "function",
+    "canAccessMemberSafetyPage": "function",
+    "canAccessGuildSettings": "function",
+    "canWithPartialContext": "function",
+    "can": "function",
+    "canBasicChannel": "function",
+    "computePermissions": "function",
+    "computeBasicPermissions": "function",
+    "canManageUser": "function",
+    "getHighestRole": "function",
+    "isRoleHigher": "function",
+    "canImpersonateRole": "function",
+    "getGuildVersion": "function",
+    "getChannelsVersion": "function"
+  },
+  "GuildOnboardingStore": {
+    "shouldShowOnboarding": "function",
+    "getOnboardingStatus": "function",
+    "resetOnboardingStatus": "function",
+    "getCurrentOnboardingStep": "function"
+  },
+  "GuildRoleSubscriptionsStore": {
+    "getSubscriptionGroupListingsForGuildFetchState": "function",
+    "getDidFetchListingForSubscriptionPlanId": "function",
+    "getSubscriptionGroupListing": "function",
+    "getSubscriptionGroupListingsForGuild": "function",
+    "getSubscriptionGroupListingForSubscriptionListing": "function",
+    "getSubscriptionListing": "function",
+    "getSubscriptionListingsForGuild": "function",
+    "getSubscriptionListingForPlan": "function",
+    "getSubscriptionSettings": "function",
+    "getSubscriptionTrial": "function",
+    "getMonetizationRestrictions": "function",
+    "getMonetizationRestrictionsFetchState": "function",
+    "getApplicationIdForGuild": "function"
+  },
+  "GatedChannelStore": {
+    "initialize": "function",
+    "isChannelGated": "function",
+    "isChannelGatedAndVisible": "function",
+    "isChannelOrThreadParentGated": "function"
+  },
+  "SubscriptionRoleStore": {
+    "initialize": "function",
+    "getGuildIdsWithPurchasableRoles": "function",
+    "buildRoles": "function",
+    "getSubscriptionRoles": "function",
+    "getPurchasableSubscriptionRoles": "function",
+    "getUserSubscriptionRoles": "function",
+    "getUserIsAdmin": "function"
+  },
+  "PerksDemosStore": {
+    "getPerksDemos": "function",
+    "getActivated": "function",
+    "shouldFetch": "function",
+    "shouldActivate": "function",
+    "overrides": "function"
+  },
+  "BillingInfoStore": {
+    "isBusy": "boolean",
+    "isUpdatingPaymentSource": "boolean",
+    "isRemovingPaymentSource": "boolean",
+    "isSyncing": "boolean",
+    "isSubscriptionFetching": "boolean",
+    "isPaymentSourceFetching": "boolean",
+    "editSourceError": "object",
+    "removeSourceError": "object",
+    "ipCountryCodeLoaded": "boolean",
+    "ipCountryCode": "string",
+    "ipCountryCodeRequest": "object",
+    "ipCountryCodeWithFallback": "string",
+    "ipCountryCodeHasError": "boolean",
+    "paymentSourcesFetchRequest": "undefined",
+    "localizedPricingPromo": "undefined",
+    "localizedPricingPromoHasError": "boolean",
+    "isLocalizedPromoEnabled": "boolean"
+  },
+  "PaymentSourceStore": {
+    "paymentSources": "object",
+    "paymentSourceIds": "object",
+    "defaultPaymentSourceId": "string",
+    "defaultPaymentSource": "object",
+    "hasFetchedPaymentSources": "boolean",
+    "getDefaultBillingCountryCode": "function",
+    "getPaymentSource": "function"
+  },
+  "SubscriptionPlanStore": {
+    "getPlanIdsForSkus": "function",
+    "getFetchedSKUIDs": "function",
+    "getForSKU": "function",
+    "getForSkuAndInterval": "function",
+    "get": "function",
+    "isFetchingForSKU": "function",
+    "isFetchingForSKUs": "function",
+    "isLoadedForSKU": "function",
+    "isLoadedForSKUs": "function",
+    "isFetchingForPremiumSKUs": "function",
+    "isLoadedForPremiumSKUs": "function",
+    "ignoreSKUFetch": "function",
+    "getPaymentSourcesForPlanId": "function",
+    "getPaymentSourceIds": "function",
+    "hasPaymentSourceForSKUId": "function",
+    "hasPaymentSourceForSKUIds": "function"
+  },
+  "BraintreeStore": {
+    "getClient": "function",
+    "getPayPalClient": "function",
+    "getVenmoClient": "function",
+    "getLastURL": "function"
+  },
+  "SubscriptionStore": {
+    "hasFetchedSubscriptions": "function",
+    "hasFetchedMostRecentPremiumTypeSubscription": "function",
+    "hasFetchedPreviousPremiumTypeSubscription": "function",
+    "getPremiumSubscription": "function",
+    "getPremiumTypeSubscription": "function",
+    "getSubscriptions": "function",
+    "getSubscriptionById": "function",
+    "getActiveGuildSubscriptions": "function",
+    "getActiveApplicationSubscriptions": "function",
+    "getSubscriptionForPlanIds": "function",
+    "getMostRecentPremiumTypeSubscription": "function",
+    "getPreviousPremiumTypeSubscription": "function"
+  },
+  "RelationshipStore": {
+    "initialize": "function",
+    "isFriend": "function",
+    "isBlocked": "function",
+    "isBlockedForMessage": "function",
+    "getPendingCount": "function",
+    "getOutgoingCount": "function",
+    "getFriendCount": "function",
+    "getRelationshipCount": "function",
+    "getRelationships": "function",
+    "getRelationshipType": "function",
+    "getNickname": "function",
+    "getSince": "function",
+    "getSinces": "function",
+    "getFriendIDs": "function"
+  },
+  "GuildChannelStore": {
+    "initialize": "function",
+    "getAllGuilds": "function",
+    "getChannels": "function",
+    "getFirstChannelOfType": "function",
+    "getFirstChannel": "function",
+    "getDefaultChannel": "function",
+    "getSFWDefaultChannel": "function",
+    "getSelectableChannelIds": "function",
+    "getSelectableChannels": "function",
+    "getVocalChannelIds": "function",
+    "getDirectoryChannelIds": "function",
+    "hasSelectableChannel": "function",
+    "hasElevatedPermissions": "function",
+    "hasChannels": "function",
+    "hasCategories": "function",
+    "getTextChannelNameDisambiguations": "function"
+  },
+  "GuildOnboardingHomeSettingsStore": {
+    "getSettings": "function",
+    "getNewMemberActions": "function",
+    "getActionForChannel": "function",
+    "hasMemberAction": "function",
+    "getResourceChannels": "function",
+    "getResourceForChannel": "function",
+    "getIsLoading": "function",
+    "getWelcomeMessage": "function",
+    "hasSettings": "function",
+    "getEnabled": "function",
+    "getNewMemberAction": "function"
+  },
+  "GameStore": {
+    "initialize": "function",
+    "getState": "function",
+    "games": "object",
+    "getDetectableGame": "function",
+    "getGameByName": "function",
+    "isGameInDatabase": "function",
+    "fetching": "boolean",
+    "detectableGamesEtag": "string",
+    "lastFetched": "object",
+    "getGameByExecutable": "function",
+    "getGameByGameData": "function",
+    "shouldReport": "function",
+    "markGameReported": "function"
+  },
+  "ApplicationStore": {
+    "_getAllApplications": "function",
+    "getGuildApplication": "function",
+    "getGuildApplicationIds": "function",
+    "getApplication": "function",
+    "getApplicationByName": "function",
+    "isFetchingApplication": "function",
+    "didFetchingApplicationFail": "function",
+    "getFetchingOrFailedFetchingIds": "function"
+  },
+  "SKUStore": {
+    "initialize": "function",
+    "get": "function",
+    "getForApplication": "function",
+    "isFetching": "function",
+    "getSKUs": "function",
+    "didFetchingSkuFail": "function"
+  },
+  "LibraryApplicationStore": {
+    "initialize": "function",
+    "libraryApplications": "object",
+    "getAllLibraryApplications": "function",
+    "hasLibraryApplication": "function",
+    "hasApplication": "function",
+    "getLibraryApplication": "function",
+    "getActiveLibraryApplication": "function",
+    "isUpdatingFlags": "function",
+    "getActiveLaunchOptionId": "function",
+    "fetched": "boolean",
+    "entitledBranchIds": "object",
+    "hasRemovedLibraryApplicationThisSession": "boolean",
+    "whenInitialized": "function"
+  },
+  "InstallationManagerStore": {
+    "initialize": "function",
+    "getState": "function",
+    "defaultInstallationPath": "string",
+    "installationPaths": "object",
+    "installationPathsMetadata": "object",
+    "hasGamesInstalledInPath": "function",
+    "shouldBeInstalled": "function",
+    "getInstallationPath": "function",
+    "getLabelFromPath": "function"
+  },
+  "ConnectedAppsStore": {
+    "isConnected": "function",
+    "connections": "object",
+    "getApplication": "function",
+    "getAllConnections": "function"
+  },
+  "DeveloperExperimentStore": {
+    "initialize": "function",
+    "getExperimentDescriptor": "function"
+  },
+  "InstanceIdStore": { "getId": "function" },
+  "DispatchApplicationLaunchSetupStore": {
+    "getLastProgress": "function",
+    "isRunning": "function"
+  },
+  "ApplicationBuildStore": {
+    "initialize": "function",
+    "getTargetBuildId": "function",
+    "getTargetManifests": "function",
+    "hasNoBuild": "function",
+    "isFetching": "function",
+    "needsToFetchBuildSize": "function",
+    "getBuildSize": "function"
+  },
+  "DispatchManagerStore": {
+    "initialize": "function",
+    "activeItems": "object",
+    "finishedItems": "object",
+    "paused": "boolean",
+    "getQueuePosition": "function",
+    "isCorruptInstallation": "function"
+  },
+  "DispatchApplicationStore": {
+    "initialize": "function",
+    "getState": "function",
+    "isUpToDate": "function",
+    "shouldPatch": "function",
+    "isInstalled": "function",
+    "supportsCloudSync": "function",
+    "isLaunchable": "function",
+    "getDefaultLaunchOption": "function",
+    "getLaunchOptions": "function",
+    "getHistoricalTotalBytesRead": "function",
+    "getHistoricalTotalBytesDownloaded": "function",
+    "getHistoricalTotalBytesWritten": "function",
+    "whenInitialized": "function"
+  },
+  "RunningGameStore": {
+    "initialize": "function",
+    "getVisibleGame": "function",
+    "getCurrentGameForAnalytics": "function",
+    "getVisibleRunningGames": "function",
+    "getRunningGames": "function",
+    "getRunningDiscordApplicationIds": "function",
+    "getRunningVerifiedApplicationIds": "function",
+    "getGameForPID": "function",
+    "getLauncherForPID": "function",
+    "getOverlayOptionsForPID": "function",
+    "shouldElevateProcessForPID": "function",
+    "shouldContinueWithoutElevatedProcessForPID": "function",
+    "getCandidateGames": "function",
+    "getGamesSeen": "function",
+    "getSeenGameByName": "function",
+    "isObservedAppRunning": "function",
+    "getOverrides": "function",
+    "getOverrideForGame": "function",
+    "getGameOverlayStatus": "function",
+    "getObservedAppNameForWindow": "function",
+    "canShowAdminWarning": "boolean",
+    "isDetectionEnabled": "function",
+    "addExecutableTrackedByAnalytics": "function"
+  },
+  "ClipsStore": {
+    "initialize": "function",
+    "getClips": "function",
+    "getPendingClips": "function",
+    "getUserAgnosticState": "function",
+    "getSettings": "function",
+    "getLastClipsSession": "function",
+    "getClipsWarningShown": "function",
+    "getActiveAnimation": "function",
+    "getStreamClipAnimations": "function",
+    "hasAnyClipAnimations": "function",
+    "getHardwareClassification": "function",
+    "getHardwareClassificationForDecoupled": "function",
+    "getHardwareClassificationVersion": "function",
+    "getIsAtMaxSaveClipOperations": "function",
+    "getLastClipsError": "function",
+    "isClipsEnabledForUser": "function",
+    "isVoiceRecordingAllowedForUser": "function",
+    "isViewerClippingAllowedForUser": "function",
+    "hasClips": "function",
+    "hasTakenDecoupledClip": "function",
+    "getNewClipIds": "function"
+  },
+  "NativePermissionStore": {
+    "initialize": "function",
+    "getUserAgnosticState": "function",
+    "hasPermission": "function",
+    "handleSetNativePermission": "function"
+  },
+  "BitRateStore": { "bitrate": "number" },
+  "CertifiedDeviceStore": {
+    "initialize": "function",
+    "isCertified": "function",
+    "getCertifiedDevice": "function",
+    "getCertifiedDeviceName": "function",
+    "getCertifiedDeviceByType": "function",
+    "isHardwareMute": "function",
+    "hasEchoCancellation": "function",
+    "hasNoiseSuppression": "function",
+    "hasAutomaticGainControl": "function",
+    "getVendor": "function",
+    "getModel": "function",
+    "getRevision": "function"
+  },
+  "HookErrorStore": { "getHookError": "function" },
+  "VoiceStateStore": {
+    "getAllVoiceStates": "function",
+    "getVoiceStateVersion": "function",
+    "getVoiceStates": "function",
+    "getVoiceStatesForChannel": "function",
+    "getVideoVoiceStatesForChannel": "function",
+    "getVoiceState": "function",
+    "getVoiceStateForChannel": "function",
+    "getVoiceStateForUser": "function",
+    "getVoiceStateForSession": "function",
+    "getUserVoiceChannelId": "function",
+    "getCurrentClientVoiceChannelId": "function",
+    "getUsersWithVideo": "function",
+    "isCurrentClientInVoiceChannel": "function",
+    "isInChannel": "function",
+    "hasVideo": "function",
+    "getVoicePlatformForChannel": "function",
+    "userHasBeenMovedVersion": "number"
+  },
+  "SortedVoiceStateStore": {
+    "initialize": "function",
+    "getVoiceStates": "function",
+    "getAllVoiceStates": "function",
+    "getVoiceStatesForChannel": "function",
+    "getVoiceStatesForChannelAlt": "function",
+    "countVoiceStatesForChannel": "function",
+    "getVoiceStateVersion": "function"
+  },
+  "SessionsStore": {
+    "initialize": "function",
+    "getSessions": "function",
+    "getSession": "function",
+    "getRemoteActivities": "function",
+    "getSessionById": "function",
+    "getActiveSession": "function"
+  },
+  "GameConsoleStore": {
+    "initialize": "function",
+    "getUserAgnosticState": "function",
+    "getDevicesForPlatform": "function",
+    "getLastSelectedDeviceByPlatform": "function",
+    "getDevice": "function",
+    "getFetchingDevices": "function",
+    "getPendingDeviceCommands": "function",
+    "getRemoteSessionId": "function",
+    "getAwaitingRemoteSessionInfo": "function"
+  },
+  "RTCConnectionStore": {
+    "initialize": "function",
+    "getRTCConnection": "function",
+    "getState": "function",
+    "isConnected": "function",
+    "isDisconnected": "function",
+    "getRemoteDisconnectVoiceChannelId": "function",
+    "getLastSessionVoiceChannelId": "function",
+    "setLastSessionVoiceChannelId": "function",
+    "getGuildId": "function",
+    "getChannelId": "function",
+    "getHostname": "function",
+    "getQuality": "function",
+    "getPings": "function",
+    "getAveragePing": "function",
+    "getLastPing": "function",
+    "getOutboundLossRate": "function",
+    "getMediaSessionId": "function",
+    "getRTCConnectionId": "function",
+    "getDuration": "function",
+    "getPacketStats": "function",
+    "getVoiceStateStats": "function",
+    "getWasEverMultiParticipant": "function",
+    "getWasEverRtcConnected": "function",
+    "getSecureFramesState": "function",
+    "isUserConnected": "function",
+    "getSecureFramesRosterMapEntry": "function"
+  },
+  "SystemAnalyticsStore": {
+    "initialize": "function",
+    "getState": "function",
+    "info": "function"
+  },
+  "VideoQualityModeStore": { "mode": "number" },
+  "MediaEngineStore": {
+    "initialize": "function",
+    "supports": "function",
+    "supportsInApp": "function",
+    "isSupported": "function",
+    "isExperimentalEncodersSupported": "function",
+    "isNoiseSuppressionSupported": "function",
+    "isNoiseCancellationSupported": "function",
+    "isNoiseCancellationError": "function",
+    "isAutomaticGainControlSupported": "function",
+    "isAdvancedVoiceActivitySupported": "function",
+    "isAecDumpSupported": "function",
+    "isSimulcastSupported": "function",
+    "getAecDump": "function",
+    "getMediaEngine": "function",
+    "getVideoComponent": "function",
+    "getCameraComponent": "function",
+    "isEnabled": "function",
+    "isMute": "function",
+    "isDeaf": "function",
+    "hasContext": "function",
+    "isSelfMutedTemporarily": "function",
+    "isSelfMute": "function",
+    "shouldSkipMuteUnmuteSound": "function",
+    "notifyMuteUnmuteSoundWasSkipped": "function",
+    "isHardwareMute": "function",
+    "isSelfDeaf": "function",
+    "isVideoEnabled": "function",
+    "isVideoAvailable": "function",
+    "isScreenSharing": "function",
+    "isSoundSharing": "function",
+    "isLocalMute": "function",
+    "supportsDisableLocalVideo": "function",
+    "isLocalVideoDisabled": "function",
+    "getVideoToggleState": "function",
+    "isLocalVideoAutoDisabled": "function",
+    "isAnyLocalVideoAutoDisabled": "function",
+    "isMediaFilterSettingLoading": "function",
+    "isNativeAudioPermissionReady": "function",
+    "getGoLiveSource": "function",
+    "getGoLiveContext": "function",
+    "getLocalPan": "function",
+    "getLocalVolume": "function",
+    "getInputVolume": "function",
+    "getOutputVolume": "function",
+    "getMode": "function",
+    "getModeOptions": "function",
+    "getShortcuts": "function",
+    "getInputDeviceId": "function",
+    "getOutputDeviceId": "function",
+    "getVideoDeviceId": "function",
+    "getInputDevices": "function",
+    "getOutputDevices": "function",
+    "getVideoDevices": "function",
+    "getEchoCancellation": "function",
+    "getH265Enabled": "function",
+    "getLoopback": "function",
+    "getNoiseSuppression": "function",
+    "getAutomaticGainControl": "function",
+    "getNoiseCancellation": "function",
+    "getExperimentalEncoders": "function",
+    "getHardwareEncoding": "function",
+    "getEnableSilenceWarning": "function",
+    "getDebugLogging": "function",
+    "getQoS": "function",
+    "getAttenuation": "function",
+    "getAttenuateWhileSpeakingSelf": "function",
+    "getAttenuateWhileSpeakingOthers": "function",
+    "getAudioSubsystem": "function",
+    "getMLSSigningKey": "function",
+    "getSettings": "function",
+    "getState": "function",
+    "getInputDetected": "function",
+    "getNoInputDetectedNotice": "function",
+    "getPacketDelay": "function",
+    "setCanHavePriority": "function",
+    "isInteractionRequired": "function",
+    "getVideoHook": "function",
+    "supportsVideoHook": "function",
+    "getExperimentalSoundshare": "function",
+    "supportsExperimentalSoundshare": "function",
+    "getOpenH264": "function",
+    "getEverSpeakingWhileMuted": "function",
+    "supportsScreenSoundshare": "function",
+    "getVideoStreamParameters": "function",
+    "getSupportedSecureFramesProtocolVersion": "function",
+    "hasClipsSource": "function"
+  },
+  "UserGuildJoinRequestStore": {
+    "getRequest": "function",
+    "computeGuildIds": "function",
+    "getJoinRequestGuild": "function",
+    "hasFetchedRequestToJoinGuilds": "boolean",
+    "hasJoinRequestCoackmark": "function"
+  },
+  "SelectedGuildStore": {
+    "initialize": "function",
+    "getState": "function",
+    "getGuildId": "function",
+    "getLastSelectedGuildId": "function",
+    "getLastSelectedTimestamp": "function"
+  },
+  "SelectedChannelStore": {
+    "initialize": "function",
+    "getChannelId": "function",
+    "getVoiceChannelId": "function",
+    "getMostRecentSelectedTextChannelId": "function",
+    "getCurrentlySelectedChannelId": "function",
+    "getLastSelectedChannelId": "function",
+    "getLastSelectedChannels": "function",
+    "getLastChannelFollowingDestination": "function"
+  },
+  "ExpandedGuildFolderStore": {
+    "initialize": "function",
+    "getState": "function",
+    "getExpandedFolders": "function",
+    "isFolderExpanded": "function"
+  },
+  "GuildAvailabilityStore": {
+    "initialize": "function",
+    "isUnavailable": "function",
+    "totalGuilds": "number",
+    "totalUnavailableGuilds": "number",
+    "unavailableGuilds": "object"
+  },
+  "UserGuildSettingsStore": {
+    "initialize": "function",
+    "getState": "function",
+    "mentionOnAllMessages": "boolean",
+    "isSuppressEveryoneEnabled": "function",
+    "isSuppressRolesEnabled": "function",
+    "isMuteScheduledEventsEnabled": "function",
+    "isMobilePushEnabled": "function",
+    "isMuted": "function",
+    "isTemporarilyMuted": "function",
+    "getMuteConfig": "function",
+    "getMessageNotifications": "function",
+    "getChannelOverrides": "function",
+    "getNotifyHighlights": "function",
+    "getGuildFlags": "function",
+    "getChannelMessageNotifications": "function",
+    "getChannelMuteConfig": "function",
+    "getMutedChannels": "function",
+    "isChannelMuted": "function",
+    "isCategoryMuted": "function",
+    "resolvedMessageNotifications": "function",
+    "resolveUnreadSetting": "function",
+    "isGuildOrCategoryOrChannelMuted": "function",
+    "allowNoMessages": "function",
+    "allowAllMessages": "function",
+    "isGuildCollapsed": "function",
+    "getAllSettings": "function",
+    "getChannelIdFlags": "function",
+    "getChannelFlags": "function",
+    "getNewForumThreadsCreated": "function",
+    "isOptInEnabled": "function",
+    "isChannelRecordOrParentOptedIn": "function",
+    "isChannelOrParentOptedIn": "function",
+    "isChannelOptedIn": "function",
+    "getOptedInChannels": "function",
+    "getOptedInChannelsWithPendingUpdates": "function",
+    "getPendingChannelUpdates": "function",
+    "getGuildFavorites": "function",
+    "isFavorite": "function",
+    "isMessagesFavorite": "function",
+    "isAddedToMessages": "function",
+    "getAddedToMessages": "function",
+    "accountNotificationSettings": "object",
+    "useNewNotifications": "boolean",
+    "getGuildUnreadSetting": "function",
+    "resolveGuildUnreadSetting": "function",
+    "getChannelRecordUnreadSetting": "function",
+    "getChannelUnreadSetting": "function"
+  },
+  "SortedGuildStore": {
+    "initialize": "function",
+    "getGuildsTree": "function",
+    "getGuildFolders": "function",
+    "getGuildFolderById": "function",
+    "getFlattenedGuildIds": "function",
+    "getFlattenedGuildFolderList": "function",
+    "getCompatibleGuildFolders": "function",
+    "getFastListGuildFolders": "function",
+    "takeSnapshot": "function"
+  },
+  "DismissibleContentFrameworkStore": {
+    "initialize": "function",
+    "getState": "function",
+    "dailyCapOverridden": "undefined",
+    "lastDCDismissed": "number",
+    "getRenderedAtTimestamp": "function",
+    "hasUserHitDCCap": "function"
+  },
+  "UnsyncedUserSettingsStore": {
+    "initialize": "function",
+    "getUserAgnosticState": "function",
+    "displayCompactAvatars": "boolean",
+    "lowQualityImageMode": "boolean",
+    "videoUploadQuality": "string",
+    "dataSavingMode": "boolean",
+    "expressionPickerWidth": "string",
+    "messageRequestSidebarWidth": "number",
+    "threadSidebarWidth": "number",
+    "postSidebarWidth": "number",
+    "callChatSidebarWidth": "number",
+    "homeSidebarWidth": "number",
+    "callHeaderHeight": "undefined",
+    "useSystemTheme": "number",
+    "activityPanelHeight": "undefined",
+    "disableVoiceChannelChangeAlert": "boolean",
+    "disableEmbeddedActivityPopOutAlert": "boolean",
+    "disableActivityHardwareAccelerationPrompt": "boolean",
+    "disableInviteWithTextChannelActivityLaunch": "boolean",
+    "disableHideSelfStreamAndVideoConfirmationAlert": "boolean",
+    "pushUpsellUserSettingsDismissed": "boolean",
+    "disableActivityHostLeftNitroUpsell": "boolean",
+    "disableCallUserConfirmationPrompt": "boolean",
+    "disableApplicationSubscriptionCancellationSurvey": "boolean",
+    "enableAndroidChatListAnimations": "boolean",
+    "darkSidebar": "boolean",
+    "useMobileChatCustomRenderer": "boolean",
+    "saveCameraUploadsToDevice": "boolean",
+    "swipeToReply": "boolean"
+  },
+  "ThemeStore": {
+    "initialize": "function",
+    "getState": "function",
+    "darkSidebar": "boolean",
+    "theme": "string",
+    "systemTheme": "object",
+    "systemPrefersColorScheme": "string",
+    "isSystemThemeAvailable": "boolean"
+  },
+  "ClientThemesBackgroundStore": {
+    "initialize": "function",
+    "getState": "function",
+    "gradientPreset": "undefined",
+    "getLinearGradient": "function",
+    "isEditorOpen": "boolean",
+    "isPreview": "boolean",
+    "isCoachmark": "boolean",
+    "mobilePendingThemeIndex": "undefined"
+  },
+  "DevToolsDesignTogglesStore": {
+    "getUserAgnosticState": "function",
+    "initialize": "function",
+    "get": "function",
+    "set": "function",
+    "all": "function",
+    "allWithDescriptions": "function"
+  },
+  "WindowStore": {
+    "isFocused": "function",
+    "isVisible": "function",
+    "getFocusedWindowId": "function",
+    "getLastFocusedWindowId": "function",
+    "isElementFullScreen": "function",
+    "windowSize": "function"
+  },
+  "GuildOnboardingMemberActionStore": {
+    "getCompletedActions": "function",
+    "hasCompletedActionForChannel": "function",
+    "getState": "function"
+  },
+  "HangStatusStore": {
+    "initialize": "function",
+    "getState": "function",
+    "getCurrentHangStatus": "function",
+    "getCustomHangStatus": "function",
+    "getRecentCustomStatuses": "function",
+    "getCurrentDefaultStatus": "function",
+    "getHangStatusActivity": "function"
+  },
+  "PresenceStore": {
+    "initialize": "function",
+    "setCurrentUserOnConnectionOpen": "function",
+    "getStatus": "function",
+    "getActivities": "function",
+    "getPrimaryActivity": "function",
+    "getAllApplicationActivities": "function",
+    "getApplicationActivity": "function",
+    "findActivity": "function",
+    "getActivityMetadata": "function",
+    "getUserIds": "function",
+    "isMobileOnline": "function",
+    "getClientStatus": "function",
+    "getState": "function"
+  },
+  "TestModeStore": {
+    "initialize": "function",
+    "inTestModeForApplication": "function",
+    "inTestModeForEmbeddedApplication": "function",
+    "shouldDisplayTestMode": "function",
+    "getState": "function",
+    "isTestMode": "boolean",
+    "isFetchingAuthorization": "boolean",
+    "testModeEmbeddedApplicationId": "object",
+    "testModeApplicationId": "object",
+    "testModeOriginURL": "object",
+    "error": "undefined",
+    "whenInitialized": "function"
+  },
+  "DeveloperActivityShelfStore": {
+    "initialize": "function",
+    "getState": "function",
+    "getIsEnabled": "function",
+    "getLastUsedObject": "function",
+    "getUseActivityUrlOverride": "function",
+    "getActivityUrlOverride": "function",
+    "getFetchState": "function",
+    "getFilter": "function",
+    "getDeveloperShelfItems": "function",
+    "inDevModeForApplication": "function"
+  },
+  "EmbeddedActivitiesStore": {
+    "initialize": "function",
+    "getState": "function",
+    "getSelfEmbeddedActivityForChannel": "function",
+    "getSelfEmbeddedActivities": "function",
+    "getEmbeddedActivitiesForGuild": "function",
+    "getEmbeddedActivitiesForChannel": "function",
+    "getEmbeddedActivitiesByChannel": "function",
+    "getEmbeddedActivityDurationMs": "function",
+    "isLaunchingActivity": "function",
+    "getShelfActivities": "function",
+    "getShelfFetchStatus": "function",
+    "shouldFetchShelf": "function",
+    "getOrientationLockStateForApp": "function",
+    "getPipOrientationLockStateForApp": "function",
+    "getGridOrientationLockStateForApp": "function",
+    "getLayoutModeForApp": "function",
+    "getConnectedActivityChannelId": "function",
+    "getActivityPanelMode": "function",
+    "getFocusedLayout": "function",
+    "getCurrentEmbeddedActivity": "function",
+    "getEmbeddedActivityForUserId": "function",
+    "hasActivityEverBeenLaunched": "function"
+  },
+  "GuildScheduledEventStore": {
+    "getGuildScheduledEvent": "function",
+    "getGuildEventCountByIndex": "function",
+    "getGuildScheduledEventsForGuild": "function",
+    "getGuildScheduledEventsByIndex": "function",
+    "getRsvpVersion": "function",
+    "getRsvp": "function",
+    "isInterestedInEventRecurrence": "function",
+    "getUserCount": "function",
+    "hasUserCount": "function",
+    "isActive": "function",
+    "getActiveEventByChannel": "function",
+    "getUsersForGuildEvent": "function"
+  },
+  "InviteStore": {
+    "getInvite": "function",
+    "getInviteError": "function",
+    "getInvites": "function",
+    "getInviteKeyForGuildId": "function"
+  },
+  "ApplicationStreamingStore": {
+    "initialize": "function",
+    "isSelfStreamHidden": "function",
+    "getLastActiveStream": "function",
+    "getAllActiveStreams": "function",
+    "getAllActiveStreamsForChannel": "function",
+    "getActiveStreamForStreamKey": "function",
+    "getActiveStreamForApplicationStream": "function",
+    "getCurrentUserActiveStream": "function",
+    "getActiveStreamForUser": "function",
+    "getStreamerActiveStreamMetadata": "function",
+    "getStreamerActiveStreamMetadataForStream": "function",
+    "getAnyStreamForUser": "function",
+    "getStreamForUser": "function",
+    "getRTCStream": "function",
+    "getAllApplicationStreams": "function",
+    "getAllApplicationStreamsForChannel": "function",
+    "getViewerIds": "function",
+    "getCurrentAppIntent": "function",
+    "getState": "function"
+  },
+  "CallStore": {
+    "initialize": "function",
+    "getCall": "function",
+    "getCalls": "function",
+    "getMessageId": "function",
+    "isCallActive": "function",
+    "isCallUnavailable": "function",
+    "getInternalState": "function"
+  },
+  "SpeakingStore": {
+    "initialize": "function",
+    "getSpeakingDuration": "function",
+    "getSpeakers": "function",
+    "isSpeaking": "function",
+    "isPrioritySpeaker": "function",
+    "isSoundSharing": "function",
+    "isAnyoneElseSpeaking": "function",
+    "isCurrentUserSpeaking": "function",
+    "isAnyonePrioritySpeaking": "function",
+    "isCurrentUserPrioritySpeaking": "function"
+  },
+  "VideoStreamStore": {
+    "getStreamId": "function",
+    "getUserStreamData": "function"
+  },
+  "SoundboardStore": {
+    "initialize": "function",
+    "getOverlaySerializedState": "function",
+    "getSounds": "function",
+    "getSoundsForGuild": "function",
+    "getSound": "function",
+    "getSoundById": "function",
+    "isFetchingSounds": "function",
+    "isFetchingDefaultSounds": "function",
+    "isFetching": "function",
+    "shouldFetchDefaultSounds": "function",
+    "hasFetchedDefaultSounds": "function",
+    "isUserPlayingSounds": "function",
+    "isPlayingSound": "function",
+    "isFavoriteSound": "function",
+    "getFavorites": "function",
+    "isLocalSoundboardMuted": "function",
+    "hasHadOtherUserPlaySoundInSession": "function",
+    "hasFetchedAllSounds": "function"
+  },
+  "ChannelRTCStore": {
+    "initialize": "function",
+    "getParticipantsVersion": "function",
+    "getParticipants": "function",
+    "getSpeakingParticipants": "function",
+    "getFilteredParticipants": "function",
+    "getVideoParticipants": "function",
+    "getStreamParticipants": "function",
+    "getActivityParticipants": "function",
+    "getParticipant": "function",
+    "getUserParticipantCount": "function",
+    "getParticipantsOpen": "function",
+    "getVoiceParticipantsHidden": "function",
+    "getSelectedParticipantId": "function",
+    "getSelectedParticipant": "function",
+    "getSelectedParticipantStats": "function",
+    "getMode": "function",
+    "getLayout": "function",
+    "getChatOpen": "function",
+    "isFullscreenInContext": "function",
+    "getStageStreamSize": "function",
+    "getStageVideoLimitBoostUpsellDismissed": "function"
+  },
+  "MessageRequestStore": {
+    "initialize": "function",
+    "loadCache": "function",
+    "takeSnapshot": "function",
+    "getMessageRequestChannelIds": "function",
+    "getMessageRequestsCount": "function",
+    "isMessageRequest": "function",
+    "isAcceptedOptimistic": "function",
+    "getUserCountryCode": "function",
+    "isReady": "function"
+  },
+  "SpamMessageRequestStore": {
+    "initialize": "function",
+    "loadCache": "function",
+    "takeSnapshot": "function",
+    "getSpamChannelIds": "function",
+    "getSpamChannelsCount": "function",
+    "isSpam": "function",
+    "isAcceptedOptimistic": "function",
+    "isReady": "function"
+  },
+  "DevToolsDevSettingsStore": {
+    "getUserAgnosticState": "function",
+    "initialize": "function",
+    "get": "function",
+    "set": "function",
+    "all": "function",
+    "allByCategory": "function"
+  },
+  "NetworkStore": {
+    "initialize": "function",
+    "getType": "function",
+    "getEffectiveConnectionSpeed": "function",
+    "getServiceProvider": "function"
+  },
+  "DraftStore": {
+    "initialize": "function",
+    "getState": "function",
+    "getThreadDraftWithParentMessageId": "function",
+    "getRecentlyEditedDrafts": "function",
+    "getDraft": "function",
+    "getThreadSettings": "function"
+  },
+  "UploadAttachmentStore": {
+    "getFirstUpload": "function",
+    "hasAdditionalUploads": "function",
+    "getUploads": "function",
+    "getUploadCount": "function",
+    "getUpload": "function",
+    "findUpload": "function"
+  },
+  "StickerMessagePreviewStore": { "getStickerPreview": "function" },
+  "PremiumPaymentModalStore": {
+    "paymentError": "object",
+    "getGiftCode": "function"
+  },
+  "NotificationCenterItemsStore": {
+    "initialize": "function",
+    "getState": "function",
+    "loading": "boolean",
+    "initialized": "boolean",
+    "items": "object",
+    "hasMore": "boolean",
+    "cursor": "undefined",
+    "errored": "boolean",
+    "active": "boolean",
+    "localItems": "object",
+    "tabFocused": "boolean"
+  },
+  "ActiveThreadsStore": {
+    "initialize": "function",
+    "isActive": "function",
+    "getThreadsForGuild": "function",
+    "getThreadsForParent": "function",
+    "hasThreadsForChannel": "function",
+    "forEachGuild": "function",
+    "hasLoaded": "function"
+  },
+  "SearchStore": {
+    "initialize": "function",
+    "isOpen": "function",
+    "getCurrentSearchModalType": "function",
+    "getCurrentSearchId": "function",
+    "isActive": "function",
+    "isTokenized": "function",
+    "getSearchType": "function",
+    "getRawResults": "function",
+    "hasResults": "function",
+    "isIndexing": "function",
+    "isHistoricalIndexing": "function",
+    "isSearching": "function",
+    "getAnalyticsId": "function",
+    "getResultsBlocked": "function",
+    "getDocumentsIndexedCount": "function",
+    "getSearchFetcher": "function",
+    "getTotalResults": "function",
+    "getEditorState": "function",
+    "getHistory": "function",
+    "getOffset": "function",
+    "getQuery": "function",
+    "hasError": "function",
+    "shouldShowBlockedResults": "function",
+    "shouldShowNoResultsAlt": "function",
+    "getResultsState": "function"
+  },
+  "ChannelSectionStore": {
+    "initialize": "function",
+    "getState": "function",
+    "getSection": "function",
+    "getSidebarState": "function",
+    "getGuildSidebarState": "function",
+    "getCurrentSidebarChannelId": "function",
+    "getCurrentSidebarMessageId": "function"
+  },
+  "DimensionStore": {
+    "percentageScrolled": "function",
+    "getChannelDimensions": "function",
+    "getGuildDimensions": "function",
+    "getGuildListDimensions": "function",
+    "isAtBottom": "function"
+  },
+  "BlockedDomainStore": {
+    "initialize": "function",
+    "getCurrentRevision": "function",
+    "getBlockedDomainList": "function",
+    "isBlockedDomain": "function"
+  },
+  "MaskedLinkStore": {
+    "initialize": "function",
+    "isTrustedDomain": "function",
+    "isTrustedProtocol": "function"
+  },
+  "ReferencedMessageStore": {
+    "initialize": "function",
+    "getMessageByReference": "function",
+    "getMessage": "function",
+    "getReplyIdsForChannel": "function"
+  },
+  "SearchMessageStore": { "getMessage": "function" },
+  "FalsePositiveStore": {
+    "getFpMessageInfo": "function",
+    "getChannelFpInfo": "function",
+    "canSubmitFpReport": "function",
+    "validContentScanVersion": "number"
+  },
+  "MessageStore": {
+    "initialize": "function",
+    "getMessages": "function",
+    "getMessage": "function",
+    "getLastEditableMessage": "function",
+    "getLastCommandMessage": "function",
+    "getLastMessage": "function",
+    "getLastNonCurrentUserMessage": "function",
+    "jumpedMessageId": "function",
+    "focusedMessageId": "function",
+    "hasPresent": "function",
+    "isReady": "function",
+    "whenReady": "function",
+    "isLoadingMessages": "function",
+    "hasCurrentUserSentMessage": "function",
+    "hasCurrentUserSentMessageSinceAppStart": "function"
+  },
+  "GuildNSFWAgreeStore": { "initialize": "function", "didAgree": "function" },
+  "GuildVerificationStore": {
+    "initialize": "function",
+    "getCheck": "function",
+    "canChatInGuild": "function"
+  },
+  "GuildMemberRequesterStore": {
+    "initialize": "function",
+    "requestMember": "function"
+  },
+  "StageChannelRoleStore": {
+    "initialize": "function",
+    "isSpeaker": "function",
+    "isModerator": "function",
+    "isAudienceMember": "function",
+    "getPermissionsForUser": "function"
+  },
+  "StageChannelParticipantStore": {
+    "initialize": "function",
+    "getParticipantsVersion": "function",
+    "getMutableParticipants": "function",
+    "getMutableRequestToSpeakParticipants": "function",
+    "getRequestToSpeakParticipantsVersion": "function",
+    "getParticipantCount": "function",
+    "getChannels": "function",
+    "getChannelsVersion": "function",
+    "getParticipant": "function"
+  },
+  "VideoBackgroundStore": {
+    "initialize": "function",
+    "videoFilterAssets": "object",
+    "hasBeenApplied": "boolean",
+    "hasUsedBackgroundInCall": "boolean"
+  },
+  "IdleStore": {
+    "isIdle": "function",
+    "isAFK": "function",
+    "getIdleSince": "function"
+  },
+  "ReadStateStore": {
+    "initialize": "function",
+    "getReadStatesByChannel": "function",
+    "getForDebugging": "function",
+    "getNotifCenterReadState": "function",
+    "hasUnread": "function",
+    "hasUnreadOrMentions": "function",
+    "hasTrackedUnread": "function",
+    "isForumPostUnread": "function",
+    "getUnreadCount": "function",
+    "getMentionCount": "function",
+    "getGuildChannelUnreadState": "function",
+    "hasRecentlyVisitedAndRead": "function",
+    "ackMessageId": "function",
+    "getTrackedAckMessageId": "function",
+    "lastMessageId": "function",
+    "lastMessageTimestamp": "function",
+    "lastPinTimestamp": "function",
+    "getOldestUnreadMessageId": "function",
+    "getOldestUnreadTimestamp": "function",
+    "isEstimated": "function",
+    "hasOpenedThread": "function",
+    "hasUnreadPins": "function",
+    "isNewForumThread": "function",
+    "getAllReadStates": "function",
+    "getGuildUnreadsSentinel": "function",
+    "getMentionChannelIds": "function",
+    "getNonChannelAckId": "function",
+    "getSnapshot": "function"
+  },
+  "ThreadMembersStore": {
+    "initialize": "function",
+    "getMemberCount": "function",
+    "getMemberIdsPreview": "function",
+    "getInitialOverlayState": "function"
+  },
+  "ThreadMessageStore": {
+    "initialize": "function",
+    "getCount": "function",
+    "getMostRecentMessage": "function",
+    "getChannelThreadsVersion": "function",
+    "getInitialOverlayState": "function"
+  },
+  "LayoutStore": {
+    "initialize": "function",
+    "getState": "function",
+    "getLayouts": "function",
+    "getLayout": "function",
+    "getAllWidgets": "function",
+    "getWidget": "function",
+    "getWidgetsForLayout": "function",
+    "getWidgetConfig": "function",
+    "getWidgetDefaultSettings": "function",
+    "getWidgetType": "function",
+    "getRegisteredWidgets": "function",
+    "getDefaultLayout": "function"
+  },
+  "OverlayStore": {
+    "initialize": "function",
+    "getState": "function",
+    "isUILocked": "function",
+    "isInstanceUILocked": "function",
+    "isInstanceFocused": "function",
+    "isFocused": "function",
+    "isPinned": "function",
+    "getSelectedGuildId": "function",
+    "getSelectedChannelId": "function",
+    "getSelectedCallId": "function",
+    "getDisplayUserMode": "function",
+    "getDisplayNameMode": "function",
+    "getAvatarSizeMode": "function",
+    "getNotificationPositionMode": "function",
+    "getTextChatNotificationMode": "function",
+    "showKeybindIndicators": "boolean",
+    "getDisableExternalLinkAlert": "function",
+    "getFocusedPID": "function",
+    "initialized": "boolean",
+    "incompatibleApp": "boolean",
+    "getActiveRegions": "function",
+    "getTextWidgetOpacity": "function",
+    "isPreviewingInGame": "function"
+  },
+  "RTCRegionStore": {
+    "initialize": "function",
+    "shouldIncludePreferredRegion": "function",
+    "getPreferredRegion": "function",
+    "getPreferredRegions": "function",
+    "getRegion": "function",
+    "getUserAgnosticState": "function",
+    "shouldPerformLatencyTest": "function"
+  },
+  "ConnectedAccountsStore": {
+    "isJoining": "function",
+    "joinErrorMessage": "function",
+    "isFetching": "function",
+    "getAccounts": "function",
+    "getLocalAccounts": "function",
+    "getAccount": "function",
+    "getLocalAccount": "function",
+    "isSuggestedAccountType": "function"
+  },
+  "ApplicationAssetsStore": {
+    "getApplicationAssetFetchState": "function",
+    "getFetchingIds": "function",
+    "getApplicationAssets": "function"
+  },
+  "SpotifyProtocolStore": { "isProtocolRegistered": "function" },
+  "SpotifyStore": {
+    "initialize": "function",
+    "hasConnectedAccount": "function",
+    "getActiveSocketAndDevice": "function",
+    "getPlayableComputerDevices": "function",
+    "canPlay": "function",
+    "getSyncingWith": "function",
+    "wasAutoPaused": "function",
+    "getLastPlayedTrackId": "function",
+    "getTrack": "function",
+    "getPlayerState": "function",
+    "shouldShowActivity": "function",
+    "getActivity": "function"
+  },
+  "EmojiCaptionsStore": {
+    "initialize": "function",
+    "getState": "function",
+    "getCaptionsForEmojiById": "function",
+    "getIsFetching": "function",
+    "getEmojiCaptionsTTL": "function",
+    "hasPersistedState": "function",
+    "clear": "function"
+  },
+  "TopEmojiStore": {
+    "initialize": "function",
+    "getState": "function",
+    "getTopEmojiIdsByGuildId": "function",
+    "getIsFetching": "function"
+  },
+  "EmojiStore": {
+    "initialize": "function",
+    "getState": "function",
+    "loadState": "number",
+    "hasPendingUsage": "function",
+    "categories": "object",
+    "diversitySurrogate": "string",
+    "emojiFrecencyWithoutFetchingLatest": "object",
+    "emojiReactionFrecencyWithoutFetchingLatest": "object",
+    "getGuildEmoji": "function",
+    "getUsableGuildEmoji": "function",
+    "getGuilds": "function",
+    "getDisambiguatedEmojiContext": "function",
+    "getSearchResultsOrder": "function",
+    "searchWithoutFetchingLatest": "function",
+    "getUsableCustomEmojiById": "function",
+    "getCustomEmojiById": "function",
+    "getTopEmoji": "function",
+    "getNewlyAddedEmoji": "function",
+    "getTopEmojisMetadata": "function",
+    "getEmojiAutosuggestion": "function",
+    "hasUsableEmojiInAnyGuild": "function",
+    "hasFavoriteEmojis": "function"
+  },
+  "StageChannelSelfRichPresenceStore": {
+    "initialize": "function",
+    "getActivity": "function"
+  },
+  "FirstPartyRichPresenceStore": {
+    "initialize": "function",
+    "getActivities": "function"
+  },
+  "ExternalStreamingStore": {
+    "initialize": "function",
+    "getStream": "function"
+  },
+  "LocalActivityStore": {
+    "initialize": "function",
+    "getActivities": "function",
+    "getPrimaryActivity": "function",
+    "getApplicationActivity": "function",
+    "getCustomStatusActivity": "function",
+    "findActivity": "function",
+    "getApplicationActivities": "function"
+  },
+  "SelfPresenceStore": {
+    "initialize": "function",
+    "getLocalPresence": "function",
+    "getStatus": "function",
+    "getActivities": "function",
+    "getPrimaryActivity": "function",
+    "getApplicationActivity": "function",
+    "findActivity": "function",
+    "getBroadcast": "function"
+  },
+  "SoundpackStore": {
+    "initialize": "function",
+    "getState": "function",
+    "getSoundpack": "function"
+  },
+  "ChangelogStore": {
+    "initialize": "function",
+    "getChangelog": "function",
+    "latestChangelogId": "function",
+    "getChangelogLoadStatus": "function",
+    "hasLoadedConfig": "function",
+    "getConfig": "function",
+    "overrideId": "function",
+    "lastSeenChangelogId": "function",
+    "lastSeenChangelogDate": "function",
+    "getStateForDebugging": "function",
+    "isLocked": "function"
+  },
+  "PopoutWindowStore": {
+    "initialize": "function",
+    "getWindow": "function",
+    "getWindowState": "function",
+    "getWindowKeys": "function",
+    "getWindowOpen": "function",
+    "getIsAlwaysOnTop": "function",
+    "getWindowFocused": "function",
+    "getWindowVisible": "function",
+    "getState": "function",
+    "unmountWindow": "function"
+  },
+  "InstantInviteStore": {
+    "getInvite": "function",
+    "getFriendInvite": "function",
+    "getFriendInvitesFetching": "function",
+    "canRevokeFriendInvite": "function"
+  },
+  "SaveableChannelsStore": {
+    "initialize": "function",
+    "loadCache": "function",
+    "canEvictOrphans": "function",
+    "saveLimit": "function",
+    "getSaveableChannels": "function",
+    "takeSnapshot": "function"
+  },
+  "GuildJoinRequestStoreV2": {
+    "getRequest": "function",
+    "getRequests": "function",
+    "getSubmittedGuildJoinRequestTotal": "function",
+    "isFetching": "function",
+    "hasFetched": "function",
+    "getSelectedApplicationTab": "function",
+    "getSelectedSortOrder": "function",
+    "getSelectedGuildJoinRequest": "function"
+  },
+  "GuildTemplateStore": {
+    "getGuildTemplate": "function",
+    "getGuildTemplates": "function",
+    "getForGuild": "function",
+    "getDisplayedGuildTemplateCode": "function"
+  },
+  "PoggermodeSettingsStore": {
+    "initialize": "function",
+    "getUserAgnosticState": "function",
+    "settingsVisible": "boolean",
+    "isEnabled": "function",
+    "shakeIntensity": "number",
+    "combosRequiredCount": "number",
+    "screenshakeEnabled": "boolean",
+    "screenshakeEnabledLocations": "object",
+    "combosEnabled": "boolean",
+    "comboSoundsEnabled": "boolean"
+  },
+  "PoggermodeStore": {
+    "initialize": "function",
+    "getComboScore": "function",
+    "getUserCombo": "function",
+    "isComboing": "function",
+    "getMessageCombo": "function",
+    "getMostRecentMessageCombo": "function",
+    "getUserComboShakeIntensity": "function"
+  },
+  "ApplicationCommandStore": {
+    "initialize": "function",
+    "getActiveCommand": "function",
+    "getActiveCommandSection": "function",
+    "getActiveOptionName": "function",
+    "getActiveOption": "function",
+    "getPreferredCommandId": "function",
+    "getOptionStates": "function",
+    "getOptionState": "function",
+    "getCommandOrigin": "function",
+    "getOption": "function",
+    "getState": "function"
+  },
+  "ApplicationCommandAutocompleteStore": {
+    "initialize": "function",
+    "getLastErrored": "function",
+    "getAutocompleteChoices": "function",
+    "getAutocompleteLastChoices": "function",
+    "getLastResponseNonce": "function"
+  },
+  "ChannelMemberStore": {
+    "initialize": "function",
+    "getProps": "function",
+    "getRows": "function"
+  },
+  "GuildSubscriptionsStore": {
+    "initialize": "function",
+    "getSubscribedThreadIds": "function",
+    "isSubscribedToThreads": "function",
+    "isSubscribedToAnyMember": "function",
+    "isSubscribedToMemberUpdates": "function",
+    "isSubscribedToAnyGuildChannel": "function"
+  },
+  "ForumPostMessagesStore": {
+    "initialize": "function",
+    "isLoading": "function",
+    "getMessage": "function"
+  },
+  "ForumSearchStore": {
+    "getSearchQuery": "function",
+    "getSearchLoading": "function",
+    "getSearchResults": "function",
+    "getHasSearchResults": "function"
+  },
+  "ArchivedThreadsStore": {
+    "initialize": "function",
+    "canLoadMore": "boolean",
+    "nextOffset": "number",
+    "isInitialLoad": "boolean",
+    "isLoading": "function",
+    "getThreads": "function"
+  },
+  "MessageReactionsStore": { "getReactions": "function" },
+  "UserSettingsModalStore": {
+    "initialize": "function",
+    "hasChanges": "function",
+    "isOpen": "function",
+    "getPreviousSection": "function",
+    "getSection": "function",
+    "getSubsection": "function",
+    "getScrollPosition": "function",
+    "shouldOpenWithoutBackstack": "function",
+    "getProps": "function",
+    "onClose": "object"
+  },
+  "CollectiblesCategoryStore": {
+    "initialize": "function",
+    "isFetchingCategories": "boolean",
+    "isFetchingProduct": "function",
+    "error": "undefined",
+    "lastSuccessfulFetch": "undefined",
+    "lastFetchOptions": "object",
+    "categories": "object",
+    "products": "object",
+    "getCategory": "function",
+    "getProduct": "function",
+    "getCategoryForProduct": "function"
+  },
+  "QuestsStore": {
+    "quests": "object",
+    "isFetchingCurrentQuests": "boolean",
+    "lastFetchedCurrentQuests": "number",
+    "questDeliveryOverride": "undefined",
+    "isEnrolling": "function",
+    "isClaimingReward": "function",
+    "isFetchingRewardCode": "function",
+    "isDismissingContent": "function",
+    "getRewardCode": "function",
+    "getRewards": "function",
+    "getStreamHeartbeatFailure": "function",
+    "getQuest": "function",
+    "isProgressingOnDesktop": "function"
+  },
+  "PendingReplyStore": {
+    "initialize": "function",
+    "getPendingReply": "function",
+    "getPendingReplyActionSource": "function"
+  },
+  "StickersStore": {
+    "initialize": "function",
+    "isLoaded": "boolean",
+    "loadState": "number",
+    "stickerMetadata": "object",
+    "hasLoadedStickerPacks": "boolean",
+    "isFetchingStickerPacks": "boolean",
+    "getStickerById": "function",
+    "getStickerPack": "function",
+    "getPremiumPacks": "function",
+    "isPremiumPack": "function",
+    "getRawStickersByGuild": "function",
+    "getAllStickersIterator": "function",
+    "getAllGuildStickers": "function",
+    "getStickersByGuildId": "function"
+  },
+  "ActiveJoinedThreadsStore": {
+    "initialize": "function",
+    "hasActiveJoinedUnreadThreads": "function",
+    "getActiveUnjoinedThreadsForParent": "function",
+    "getActiveJoinedThreadsForParent": "function",
+    "getActiveJoinedThreadsForGuild": "function",
+    "getActiveJoinedUnreadThreadsForGuild": "function",
+    "getActiveJoinedUnreadThreadsForParent": "function",
+    "getActiveJoinedRelevantThreadsForGuild": "function",
+    "getActiveJoinedRelevantThreadsForParent": "function",
+    "getActiveUnjoinedThreadsForGuild": "function",
+    "getActiveUnjoinedUnreadThreadsForGuild": "function",
+    "getActiveUnjoinedUnreadThreadsForParent": "function",
+    "getNewThreadCountsForGuild": "function",
+    "computeAllActiveJoinedThreads": "function",
+    "getNewThreadCount": "function",
+    "getActiveThreadCount": "function"
+  },
+  "GuildSettingsStore": {
+    "initialize": "function",
+    "getMetadata": "function",
+    "hasChanges": "function",
+    "isOpen": "function",
+    "getSavedRouteState": "function",
+    "getSection": "function",
+    "showNotice": "function",
+    "getGuildId": "function",
+    "showPublicSuccessModal": "function",
+    "getGuild": "function",
+    "isSubmitting": "function",
+    "isGuildMetadataLoaded": "function",
+    "getErrors": "function",
+    "getSelectedRoleId": "function",
+    "getSlug": "function",
+    "getBans": "function",
+    "getProps": "function"
+  },
+  "GuildOnboardingPromptsStore": {
+    "initialize": "function",
+    "getOnboardingPromptsForOnboarding": "function",
+    "getOnboardingPrompts": "function",
+    "getOnboardingResponses": "function",
+    "getSelectedOptions": "function",
+    "getOnboardingResponsesForPrompt": "function",
+    "getEnabledOnboardingPrompts": "function",
+    "getDefaultChannelIds": "function",
+    "getEnabled": "function",
+    "getOnboardingPrompt": "function",
+    "isLoading": "function",
+    "shouldFetchPrompts": "function",
+    "getPendingResponseOptions": "function",
+    "ackIdForGuild": "function",
+    "lastFetchedAt": "function",
+    "isAdvancedMode": "function"
+  },
+  "StickersPersistedStore": {
+    "initialize": "function",
+    "getState": "function",
+    "hasPendingUsage": "function",
+    "stickerFrecencyWithoutFetchingLatest": "object"
+  },
+  "LaunchableGameStore": {
+    "launchingGames": "object",
+    "launchableGames": "object",
+    "isLaunchable": "function"
+  },
+  "GameLibraryViewStore": {
+    "initialize": "function",
+    "sortDirection": "string",
+    "sortKey": "string",
+    "activeRowKey": "undefined",
+    "isNavigatingByKeyboard": "boolean"
+  },
+  "ApplicationViewStore": {
+    "initialize": "function",
+    "applicationFilterQuery": "string",
+    "applicationViewItems": "object",
+    "launchableApplicationViewItems": "object",
+    "libraryApplicationViewItems": "object",
+    "filteredLibraryApplicationViewItems": "object",
+    "sortedFilteredLibraryApplicationViewItems": "object",
+    "hiddenLibraryApplicationViewItems": "object",
+    "hasFetchedApplications": "boolean"
+  },
+  "EditMessageStore": {
+    "isEditing": "function",
+    "isEditingAny": "function",
+    "getEditingTextValue": "function",
+    "getEditingRichValue": "function",
+    "getEditingMessageId": "function",
+    "getEditingMessage": "function",
+    "getEditActionSource": "function"
+  },
+  "SlowmodeStore": {
+    "initialize": "function",
+    "getSlowmodeCooldownGuess": "function"
+  },
+  "ApplicationFrecencyStore": {
+    "initialize": "function",
+    "getState": "function",
+    "hasPendingUsage": "function",
+    "getApplicationFrecencyWithoutLoadingLatest": "function",
+    "getScoreWithoutLoadingLatest": "function",
+    "getTopApplicationsWithoutLoadingLatest": "function"
+  },
+  "ForumActivePostStore": {
+    "initialize": "function",
+    "getNewThreadCount": "function",
+    "getCanAckThreads": "function",
+    "getThreadIds": "function",
+    "getCurrentThreadIds": "function",
+    "getAndDeleteMostRecentUserCreatedThreadId": "function",
+    "getFirstNoReplyThreadId": "function"
+  },
+  "ApplicationCommandFrecencyStore": {
+    "initialize": "function",
+    "getState": "function",
+    "hasPendingUsage": "function",
+    "getCommandFrecencyWithoutLoadingLatest": "function",
+    "getScoreWithoutLoadingLatest": "function",
+    "getTopCommandsWithoutLoadingLatest": "function"
+  },
+  "ApplicationCommandIndexStore": {
+    "initialize": "function",
+    "getContextState": "function",
+    "hasContextStateApplication": "function",
+    "getGuildState": "function",
+    "getUserState": "function",
+    "hasUserStateApplication": "function",
+    "getApplicationState": "function",
+    "getApplicationStates": "function",
+    "hasApplicationState": "function",
+    "query": "function",
+    "maybeQueryForInstallLessApps": "function",
+    "queryInstallOnDemandApp": "function"
+  },
+  "InteractionStore": {
+    "getInteraction": "function",
+    "getMessageInteractionStates": "function",
+    "canQueueInteraction": "function",
+    "getIFrameModalApplicationId": "function",
+    "getIFrameModalKey": "function"
+  },
+  "DetectableGameSupplementalStore": {
+    "canFetch": "function",
+    "isFetching": "function",
+    "getGame": "function",
+    "getLocalizedName": "function",
+    "getThemes": "function",
+    "getCoverImageUrl": "function"
+  },
+  "OverlayRunningGameStore": {
+    "getGameForPID": "function",
+    "getGame": "function"
+  },
+  "OverlayBridgeStore": {
+    "initialize": "function",
+    "isInputLocked": "function",
+    "isSupported": "function",
+    "enabled": "boolean",
+    "legacyEnabled": "boolean",
+    "getFocusedPID": "function",
+    "isReady": "function",
+    "isCrashed": "function"
+  },
+  "KeybindsStore": {
+    "initialize": "function",
+    "getUserAgnosticState": "function",
+    "hasKeybind": "function",
+    "hasExactKeybind": "function",
+    "getKeybindForAction": "function",
+    "getOverlayKeybind": "function",
+    "getOverlayChatKeybind": "function"
+  },
+  "SecureFramesPersistedStore": {
+    "initialize": "function",
+    "getState": "function",
+    "getPersistentCodesEnabled": "function",
+    "getUploadedKeyVersionsCached": "function"
+  },
+  "RTCDebugStore": {
+    "getSection": "function",
+    "getStats": "function",
+    "getAllStats": "function",
+    "getVideoStreams": "function",
+    "shouldRecordNextConnection": "function",
+    "getSimulcastDebugOverride": "function"
+  },
+  "ApplicationStreamingSettingsStore": {
+    "initialize": "function",
+    "getState": "function"
+  },
+  "StreamRTCConnectionStore": {
+    "getActiveStreamKey": "function",
+    "getAllActiveStreamKeys": "function",
+    "getRTCConnection": "function",
+    "getStatsHistory": "function",
+    "getQuality": "function",
+    "getMediaSessionId": "function",
+    "getRtcConnectionId": "function",
+    "getVideoStats": "function",
+    "getHostname": "function",
+    "getRegion": "function",
+    "getMaxViewers": "function",
+    "getStreamSourceId": "function"
+  },
+  "GatewayZstdStore": {
+    "initialize": "function",
+    "shouldUseZstd": "function",
+    "enableFailureTracking": "function",
+    "disableFailureTracking": "function"
+  },
+  "LayerStore": { "hasLayers": "function", "getLayers": "function" },
+  "GatewayConnectionStore": {
+    "initialize": "function",
+    "getSocket": "function",
+    "isTryingToConnect": "function",
+    "isConnected": "function",
+    "isConnectedOrOverlay": "function",
+    "lastTimeConnectedChanged": "function"
+  },
+  "FrecencyStore": {
+    "initialize": "function",
+    "getState": "function",
+    "hasPendingUsage": "function",
+    "frecencyWithoutFetchingLatest": "object",
+    "getFrequentlyWithoutFetchingLatest": "function",
+    "getScoreWithoutFetchingLatest": "function",
+    "getScoreForDMWithoutFetchingLatest": "function",
+    "getMaxScore": "function",
+    "getBonusScore": "function"
+  },
+  "QuickSwitcherStore": {
+    "initialize": "function",
+    "getState": "function",
+    "isOpen": "function",
+    "getResultTotals": "function",
+    "channelNoticePredicate": "function",
+    "getFrequentGuilds": "function",
+    "getFrequentGuildsLength": "function",
+    "getChannelHistory": "function",
+    "getProps": "function"
+  },
+  "PictureInPictureStore": {
+    "initialize": "function",
+    "pipWindow": "object",
+    "pipVideoWindow": "object",
+    "pipActivityWindow": "object",
+    "pipWindows": "object",
+    "isEmbeddedActivityHidden": "function",
+    "getDockedRect": "function",
+    "isOpen": "function"
+  },
+  "ContextMenuStore": {
+    "isOpen": "function",
+    "version": "number",
+    "getContextMenu": "function",
+    "close": "function"
+  },
+  "ProfileEffectStore": {
+    "isFetching": "boolean",
+    "fetchError": "undefined",
+    "profileEffects": "object",
+    "tryItOutId": "object",
+    "canFetch": "function",
+    "hasFetched": "function",
+    "getProfileEffectById": "function"
+  },
+  "UserProfileStore": {
+    "initialize": "function",
+    "isFetchingProfile": "function",
+    "isFetchingFriends": "function",
+    "isSubmitting": "boolean",
+    "getUserProfile": "function",
+    "getGuildMemberProfile": "function",
+    "getMutualFriends": "function",
+    "getMutualFriendsCount": "function",
+    "getMutualGuilds": "function",
+    "takeSnapshot": "function"
+  },
+  "ConsentStore": {
+    "hasConsented": "function",
+    "fetchedConsents": "boolean",
+    "receivedConsentsInConnectionOpen": "boolean",
+    "getAuthenticationConsentRequired": "function"
+  },
+  "GuildIdentitySettingsStore": {
+    "getFormState": "function",
+    "getErrors": "function",
+    "showNotice": "function",
+    "getIsSubmitDisabled": "function",
+    "getPendingAvatar": "function",
+    "getPendingAvatarDecoration": "function",
+    "getPendingProfileEffectId": "function",
+    "getPendingBanner": "function",
+    "getPendingBio": "function",
+    "getPendingNickname": "function",
+    "getPendingPronouns": "function",
+    "getPendingAccentColor": "function",
+    "getPendingThemeColors": "function",
+    "getAllPending": "function",
+    "getGuild": "function",
+    "getSource": "function",
+    "getAnalyticsLocations": "function"
+  },
+  "UserSettingsAccountStore": {
+    "getFormState": "function",
+    "getErrors": "function",
+    "showNotice": "function",
+    "getIsSubmitDisabled": "function",
+    "getPendingAvatar": "function",
+    "getPendingGlobalName": "function",
+    "getPendingBanner": "function",
+    "getPendingBio": "function",
+    "getPendingPronouns": "function",
+    "getPendingAccentColor": "function",
+    "getPendingThemeColors": "function",
+    "getPendingAvatarDecoration": "function",
+    "getPendingProfileEffectId": "function",
+    "getAllPending": "function",
+    "getTryItOutThemeColors": "function",
+    "getTryItOutAvatar": "function",
+    "getTryItOutAvatarDecoration": "function",
+    "getTryItOutProfileEffectId": "function",
+    "getTryItOutBanner": "function",
+    "getAllTryItOut": "function"
+  },
+  "UserAffinitiesStore": {
+    "initialize": "function",
+    "needsRefresh": "function",
+    "getFetching": "function",
+    "getState": "function",
+    "getUserAffinities": "function",
+    "getUserAffinitiesMap": "function",
+    "getUserAffinity": "function",
+    "getUserAffinitiesUserIds": "function"
+  },
+  "ApplicationDirectoryApplicationsStore": {
+    "getApplication": "function",
+    "getApplicationRecord": "function",
+    "getApplications": "function",
+    "getApplicationFetchState": "function",
+    "getApplicationFetchStates": "function",
+    "isInvalidApplication": "function",
+    "getInvalidApplicationIds": "function",
+    "isFetching": "function",
+    "getApplicationLastFetchTime": "function"
+  },
+  "MemberVerificationFormStore": {
+    "get": "function",
+    "getRulesPrompt": "function"
+  },
+  "ReferralTrialStore": {
+    "initialize": "function",
+    "checkAndFetchReferralsRemaining": "function",
+    "getReferralsRemaining": "function",
+    "getSentUserIds": "function",
+    "isFetchingReferralsRemaining": "function",
+    "isFetchingRecipientEligibility": "function",
+    "getRecipientEligibility": "function",
+    "getRelevantUserTrialOffer": "function",
+    "isResolving": "function",
+    "getEligibleUsers": "function",
+    "getFetchingEligibleUsers": "function",
+    "getNextIndexOfEligibleUsers": "function",
+    "getIsEligibleToSendReferrals": "function",
+    "getRefreshAt": "function",
+    "getRelevantReferralTrialOffers": "function",
+    "getRecipientStatus": "function"
+  },
+  "UserOfferStore": {
+    "initialize": "function",
+    "getUserTrialOffer": "function",
+    "getUserDiscountOffer": "function",
+    "getAnyOfUserTrialOfferId": "function",
+    "hasFetchedOffer": "function",
+    "shouldFetchOffer": "function",
+    "shouldFetchAnnualOffer": "function",
+    "getAlmostExpiringTrialOffers": "function",
+    "getAcknowledgedOffers": "function",
+    "getUnacknowledgedDiscountOffers": "function",
+    "getUnacknowledgedOffers": "function",
+    "hasAnyUnexpiredOffer": "function",
+    "hasAnyUnexpiredDiscountOffer": "function",
+    "getReferrer": "function",
+    "getState": "function",
+    "forceReset": "function"
+  },
+  "GuildCategoryStore": {
+    "initialize": "function",
+    "getCategories": "function"
+  },
+  "BuildOverrideStore": {
+    "getCurrentBuildOverride": "function",
+    "getBuildOverride": "function",
+    "getBuildOverrides": "function"
+  },
+  "CollectiblesPersistedStore": {
+    "initialize": "function",
+    "getState": "function",
+    "isItemViewed": "function",
+    "reset": "function"
+  },
+  "CollectiblesPurchaseStore": {
+    "isFetching": "boolean",
+    "isClaiming": "undefined",
+    "purchases": "object",
+    "fetchError": "undefined",
+    "claimError": "undefined",
+    "getPurchase": "function"
+  },
+  "CollectiblesShopStore": {
+    "analyticsLocations": "object",
+    "analyticsSource": "object",
+    "initialProductSkuId": "undefined",
+    "getAnalytics": "function"
+  },
+  "GuildBoostSlotStore": {
+    "initialize": "function",
+    "hasFetched": "boolean",
+    "boostSlots": "object",
+    "getGuildBoostSlot": "function"
+  },
+  "PromotionsStore": {
+    "initialize": "function",
+    "outboundPromotions": "object",
+    "lastSeenOutboundPromotionStartDate": "string",
+    "lastDismissedOutboundPromotionStartDate": "string",
+    "lastFetchedActivePromotions": "number",
+    "isFetchingActiveOutboundPromotions": "boolean",
+    "hasFetchedConsumedInboundPromotionId": "boolean",
+    "consumedInboundPromotionId": "object",
+    "bogoPromotion": "object",
+    "isFetchingActiveBogoPromotion": "boolean",
+    "lastFetchedActiveBogoPromotion": "object",
+    "getState": "function"
+  },
+  "GuildRoleMemberCountStore": {
+    "getRoleMemberCount": "function",
+    "shouldFetch": "function"
+  },
+  "ContentInventoryStore": {
+    "getFeeds": "function",
+    "getFeed": "function",
+    "getFeedState": "function",
+    "getLastFeedFetchDate": "function",
+    "getFilters": "function",
+    "getFeedRequestId": "function",
+    "getDebugImpressionCappingDisabled": "function",
+    "hidden": "boolean"
+  },
+  "ContentInventoryActivityStore": {
+    "initialize": "function",
+    "getMatchingActivity": "function",
+    "getMatchingOutboxEntry": "function",
+    "getUserOutbox": "function"
+  },
+  "ActivityLauncherStore": { "getState": "function", "getStates": "function" },
+  "ActivityShelfStore": { "initialize": "function", "getState": "function" },
+  "PTOStore": {
+    "initialize": "function",
+    "hasId": "function",
+    "getState": "function"
+  },
+  "IntegrationQueryStore": { "getResults": "function", "getQuery": "function" },
+  "NewlyAddedEmojiStore": {
+    "initialize": "function",
+    "getState": "function",
+    "getLastSeenEmojiByGuild": "function",
+    "isNewerThanLastSeen": "function"
+  },
+  "HotspotStore": {
+    "initialize": "function",
+    "hasHotspot": "function",
+    "hasHiddenHotspot": "function",
+    "getHotspotOverride": "function",
+    "getState": "function"
+  },
+  "GuildIncidentsStore": {
+    "initialize": "function",
+    "getGuildIncident": "function",
+    "getIncidentsByGuild": "function",
+    "getGuildAlertSettings": "function"
+  },
+  "CategoryCollapseStore": {
+    "initialize": "function",
+    "getState": "function",
+    "isCollapsed": "function",
+    "getCollapsedCategories": "function",
+    "version": "number"
+  },
+  "GuildRoleSubscriptionTierTemplatesStore": {
+    "getTemplates": "function",
+    "getTemplateWithCategory": "function",
+    "getChannel": "function"
+  },
+  "ApplicationStreamPreviewStore": {
+    "getPreviewURL": "function",
+    "getPreviewURLForStreamKey": "function",
+    "getIsPreviewLoading": "function"
+  },
+  "ChannelStatusStore": { "getChannelStatus": "function" },
+  "GIFPickerViewStore": {
+    "getAnalyticsID": "function",
+    "getQuery": "function",
+    "getResultQuery": "function",
+    "getResultItems": "function",
+    "getTrendingCategories": "function",
+    "getSelectedFormat": "function",
+    "getSuggestions": "function",
+    "getTrendingSearchTerms": "function"
+  },
+  "VoiceChannelEffectsPersistedStore": {
+    "initialize": "function",
+    "getState": "function"
+  },
+  "VoiceChannelEffectsStore": {
+    "recentlyUsedEmojis": "object",
+    "isOnCooldown": "boolean",
+    "effectCooldownEndTime": "undefined",
+    "getEffectForUserId": "function"
+  },
+  "SoundboardEventStore": {
+    "initialize": "function",
+    "getState": "function",
+    "hasPendingUsage": "function",
+    "playedSoundHistory": "object",
+    "recentlyHeardSoundIds": "object",
+    "frecentlyPlayedSounds": "object"
+  },
+  "SpellcheckStore": {
+    "initialize": "function",
+    "isEnabled": "function",
+    "hasLearnedWord": "function"
+  },
+  "UploadStore": {
+    "initialize": "function",
+    "getFiles": "function",
+    "getMessageForFile": "function",
+    "getUploaderFileForMessageId": "function",
+    "getUploadAttachments": "function"
+  },
+  "EntitlementStore": {
+    "initialize": "function",
+    "get": "function",
+    "getGiftable": "function",
+    "getForApplication": "function",
+    "getForSku": "function",
+    "fetchingAllEntitlements": "boolean",
+    "fetchedAllEntitlements": "boolean",
+    "applicationIdsFetching": "object",
+    "applicationIdsFetched": "object",
+    "isFetchingForApplication": "function",
+    "isFetchedForApplication": "function",
+    "getForSubscription": "function",
+    "isEntitledToSku": "function",
+    "hasFetchedForApplicationIds": "function"
+  },
+  "ApplicationSubscriptionChannelNoticeStore": {
+    "initialize": "function",
+    "getUserAgnosticState": "function",
+    "getLastGuildDismissedTime": "function"
+  },
+  "ApplicationSubscriptionStore": {
+    "getSubscriptionGroupListingsForApplicationFetchState": "function",
+    "getSubscriptionGroupListing": "function",
+    "getSubscriptionGroupListingForApplication": "function",
+    "getSubscriptionGroupListingForSubscriptionListing": "function",
+    "getSubscriptionListing": "function",
+    "getSubscriptionListingsForApplication": "function",
+    "getEntitlementsForGuildFetchState": "function",
+    "getSubscriptionListingForPlan": "function",
+    "getApplicationEntitlementsForGuild": "function",
+    "getEntitlementsForGuild": "function"
+  },
+  "NoteStore": { "getNote": "function" },
+  "GuildRoleConnectionEligibilityStore": {
+    "getGuildRoleConnectionEligibility": "function"
+  },
+  "KeywordFilterStore": {
+    "loadCache": "function",
+    "takeSnapshot": "function",
+    "getKeywordTrie": "function",
+    "initializeForKeywordTests": "function"
+  },
+  "BroadcastingStore": {
+    "getBroadcasts": "function",
+    "getBroadcastsToValidateChannels": "function",
+    "getBroadcastByChannel": "function",
+    "getBroadcastByUser": "function",
+    "getUserIdsToValidate": "function"
+  },
+  "VideoSpeakerStore": { "initialize": "function", "getSpeaker": "function" },
+  "PermissionSpeakStore": {
+    "initialize": "function",
+    "isAFKChannel": "function",
+    "shouldShowWarning": "function"
+  },
+  "PermissionVADStore": {
+    "initialize": "function",
+    "shouldShowWarning": "function",
+    "canUseVoiceActivity": "function"
+  },
+  "AppIconPersistedStoreState": {
+    "initialize": "function",
+    "isEditorOpen": "boolean",
+    "isUpsellPreview": "boolean",
+    "getState": "function",
+    "getCurrentDesktopIcon": "function"
+  },
+  "NotificationSettingsStore": {
+    "initialize": "function",
+    "getUserAgnosticState": "function",
+    "getDesktopType": "function",
+    "getTTSType": "function",
+    "getDisabledSounds": "function",
+    "getDisableAllSounds": "function",
+    "getDisableUnreadBadge": "function",
+    "getNotifyMessagesInSelectedChannel": "function",
+    "taskbarFlash": "boolean",
+    "isSoundDisabled": "function"
+  },
+  "IncomingCallStore": {
+    "initialize": "function",
+    "getIncomingCalls": "function",
+    "getIncomingCallChannelIds": "function",
+    "getFirstIncomingCallId": "function",
+    "hasIncomingCalls": "function"
+  },
+  "DevToolsSettingsStore": {
+    "initialize": "function",
+    "getUserAgnosticState": "function",
+    "sidebarWidth": "number",
+    "lastOpenTabId": "string",
+    "displayTools": "boolean",
+    "showDevWidget": "boolean",
+    "devWidgetPosition": "object"
+  },
+  "DomainMigrationStore": { "getMigrationStatus": "function" },
+  "MultiAccountStore": {
+    "initialize": "function",
+    "getCanUseMultiAccountMobile": "function",
+    "getState": "function",
+    "getUsers": "function",
+    "getValidUsers": "function",
+    "getHasLoggedInAccounts": "function",
+    "getIsValidatingUsers": "function",
+    "canUseMultiAccountNotifications": "boolean",
+    "isSwitchingAccount": "boolean"
+  },
+  "InviteModalStore": {
+    "initialize": "function",
+    "isOpen": "function",
+    "getProps": "function"
+  },
+  "PrivateChannelIntegrationStore": {
+    "getIntegrations": "function",
+    "getIntegration": "function",
+    "getAllIntegrations": "function",
+    "getIntegrationsFetchState": "function",
+    "getApplicationsShelfFetchState": "function",
+    "getApplicationsShelf": "function"
+  },
+  "TypingStore": { "getTypingUsers": "function", "isTyping": "function" },
+  "ThreadMemberListStore": {
+    "initialize": "function",
+    "getMemberListVersion": "function",
+    "getMemberListSections": "function",
+    "canUserViewChannel": "function"
+  },
+  "RegionStore": {
+    "initialize": "function",
+    "getOptimalRegion": "function",
+    "getOptimalRegionId": "function",
+    "getRandomRegion": "function",
+    "getRandomRegionId": "function",
+    "getRegions": "function"
+  },
+  "EventDirectoryStore": {
+    "isFetching": "function",
+    "getEventDirectoryEntries": "function",
+    "getCachedGuildByEventId": "function",
+    "getCachedGuildScheduledEventById": "function"
+  },
+  "UpcomingEventNoticesStore": {
+    "initialize": "function",
+    "getGuildEventNoticeDismissalTime": "function",
+    "getAllEventDismissals": "function",
+    "getUpcomingNoticeSeenTime": "function",
+    "getAllUpcomingNoticeSeenTimes": "function",
+    "getState": "function"
+  },
+  "RTCConnectionDesyncStore": {
+    "initialize": "function",
+    "desyncedVoiceStatesCount": "number",
+    "getDesyncedUserIds": "function",
+    "getDesyncedVoiceStates": "function",
+    "getDesyncedParticipants": "function"
+  },
+  "TransientKeyStore": { "getUsers": "function", "isKeyVerified": "function" },
+  "VerifiedKeyStore": {
+    "initialize": "function",
+    "getState": "function",
+    "getKeyTrustedAt": "function",
+    "isKeyVerified": "function",
+    "getUserIds": "function",
+    "getUserVerifiedKeys": "function"
+  },
+  "SharedCanvasStore": {
+    "visibleOverlayCanvas": "boolean",
+    "getDrawables": "function",
+    "getAvatarImage": "function",
+    "getEmojiImage": "function",
+    "getDrawMode": "function"
+  },
+  "CallChatToastsStore": {
+    "initialize": "function",
+    "getToastsEnabled": "function",
+    "getState": "function"
+  },
+  "ActivityInviteEducationStore": {
+    "initialize": "function",
+    "getState": "function",
+    "shouldShowEducation": "function"
+  },
+  "AppLauncherStore": {
+    "initialize": "function",
+    "shouldShowPopup": "function",
+    "shouldShowModal": "function",
+    "entrypoint": "function",
+    "lastShownEntrypoint": "function",
+    "activeViewType": "function",
+    "closeReason": "function"
+  },
+  "CloudSyncStore": {
+    "initialize": "function",
+    "getState": "function",
+    "isSyncing": "function"
+  },
+  "ApplicationStoreUserSettingsStore": {
+    "initialize": "function",
+    "getState": "function",
+    "hasAcceptedStoreTerms": "undefined",
+    "hasAcceptedEULA": "function"
+  },
+  "GamePartyStore": {
+    "initialize": "function",
+    "getParty": "function",
+    "getUserParties": "function",
+    "getParties": "function"
+  },
+  "GuildOnboardingHomeNavigationStore": {
+    "initialize": "function",
+    "getState": "function",
+    "getSelectedResourceChannelId": "function",
+    "getHomeNavigationChannelId": "function"
+  },
+  "GuildAutomodMessageStore": {
+    "initialize": "function",
+    "getState": "function",
+    "getMessage": "function",
+    "getMessagesVersion": "function",
+    "getMentionRaidDetected": "function",
+    "getLastIncidentAlertMessage": "function"
+  },
+  "ChannelPinsStore": {
+    "initialize": "function",
+    "getPinnedMessages": "function",
+    "loaded": "function"
+  },
+  "GiftCodeStore": {
+    "get": "function",
+    "getError": "function",
+    "getForGifterSKUAndPlan": "function",
+    "getIsResolving": "function",
+    "getIsResolved": "function",
+    "getIsAccepting": "function",
+    "getUserGiftCodesFetchingForSKUAndPlan": "function",
+    "getUserGiftCodesLoadedAtForSKUAndPlan": "function",
+    "getResolvingCodes": "function",
+    "getResolvedCodes": "function",
+    "getAcceptingCodes": "function"
+  },
+  "StoreListingStore": {
+    "initialize": "function",
+    "get": "function",
+    "getForSKU": "function",
+    "getUnpublishedForSKU": "function",
+    "getForChannel": "function",
+    "getStoreListing": "function"
+  },
+  "ApplicationStoreSettingsStore": { "didMatureAgree": "boolean" },
+  "ApplicationDirectoryCategoriesStore": {
+    "getLastFetchTimeMs": "function",
+    "getCategories": "function"
+  },
+  "ApplicationDirectorySearchStore": {
+    "getSearchResults": "function",
+    "getFetchState": "function"
+  },
+  "ApplicationDirectorySimilarApplicationsStore": {
+    "getSimilarApplications": "function",
+    "getFetchState": "function"
+  },
+  "MyGuildApplicationsStore": {
+    "initialize": "function",
+    "getState": "function",
+    "getGuildIdsForApplication": "function",
+    "getLastFetchTimeMs": "function",
+    "getNextFetchRetryTimeMs": "function",
+    "getFetchState": "function"
+  },
+  "ApplicationStoreDirectoryStore": {
+    "initialize": "function",
+    "hasStorefront": "function",
+    "getStoreLayout": "function",
+    "getFetchStatus": "function"
+  },
+  "PurchaseTokenAuthStore": {
+    "purchaseTokenAuthState": "number",
+    "purchaseTokenHash": "object",
+    "expiresAt": "object"
+  },
+  "SKUPaymentModalStore": {
+    "getPricesForSku": "function",
+    "isOpen": "function",
+    "isPurchasingSKU": "boolean",
+    "forceConfirmationStepOnMount": "boolean",
+    "error": "object",
+    "skuId": "object",
+    "applicationId": "object",
+    "analyticsLocation": "object",
+    "promotionId": "object",
+    "isIAP": "boolean",
+    "giftCode": "object",
+    "isGift": "boolean",
+    "isFetchingSKU": "function"
+  },
+  "PaymentAuthenticationStore": {
+    "isAwaitingAuthentication": "boolean",
+    "error": "object",
+    "awaitingPaymentId": "object"
+  },
+  "NewPaymentSourceStore": {
+    "stripePaymentMethod": "object",
+    "popupCallbackCalled": "object",
+    "braintreeEmail": "string",
+    "braintreeNonce": "object",
+    "venmoUsername": "string",
+    "redirectedPaymentId": "object",
+    "adyenPaymentData": "object",
+    "redirectedPaymentSourceId": "object",
+    "getCreditCardInfo": "function",
+    "isCardInfoValid": "boolean",
+    "getBillingAddressInfo": "function",
+    "isBillingAddressInfoValid": "boolean",
+    "error": "object"
+  },
+  "BrowserCheckoutStateStore": {
+    "browserCheckoutState": "number",
+    "loadId": "object"
+  },
+  "ChannelFollowingPublishBumpStore": {
+    "initialize": "function",
+    "shouldShowBump": "function"
+  },
+  "GuildProductsStore": {
+    "getGuildProductsForGuildFetchState": "function",
+    "getGuildProduct": "function",
+    "getGuildProductsForGuild": "function",
+    "getGuildProductFetchState": "function",
+    "isGuildProductsCacheExpired": "function"
+  },
+  "CreatorMonetizationStore": {
+    "getPriceTiersFetchStateForGuildAndType": "function",
+    "getPriceTiersForGuildAndType": "function"
+  },
+  "BasicGuildStore": {
+    "getGuild": "function",
+    "getGuildOrStatus": "function",
+    "getVersion": "function"
+  },
+  "LocalInteractionComponentStateStore": {
+    "getInteractionComponentStates": "function",
+    "getInteractionComponentStateVersion": "function",
+    "getInteractionComponentState": "function"
+  },
+  "InteractionModalStore": { "getModalState": "function" },
+  "MediaPostEmbedStore": {
+    "getMediaPostEmbed": "function",
+    "getEmbedFetchState": "function",
+    "getMediaPostEmbeds": "function"
+  },
+  "BurstReactionEffectsStore": {
+    "getReactionPickerAnimation": "function",
+    "getEffectForEmojiId": "function"
+  },
+  "GuildPopoutStore": {
+    "initialize": "function",
+    "isFetchingGuild": "function",
+    "getGuild": "function",
+    "hasFetchFailed": "function"
+  },
+  "SurveyStore": {
+    "initialize": "function",
+    "getState": "function",
+    "getCurrentSurvey": "function",
+    "getSurveyOverride": "function",
+    "getLastSeenTimestamp": "function"
+  },
+  "CreatorMonetizationMarketingStore": {
+    "getEligibleGuildsForNagActivate": "function"
+  },
+  "DropsStore": {
+    "initialize": "function",
+    "getActivityPanelTooltipAction": "function",
+    "getIsPartnerGameQuestComplete": "function",
+    "serverEligibleByQuestIds": "object",
+    "platformAvailability": "object",
+    "userStatus": "object",
+    "activityPanelTooltipAction": "string",
+    "enrolledDropsByQuestId": "object",
+    "hasInitialProgressFetched": "boolean",
+    "isCurrentQuestCompleted": "boolean",
+    "isCurrentQuestInterrupted": "boolean",
+    "currentDropQuestGameTitle": "undefined",
+    "currentDropQuestStreamProgress": "number"
+  },
+  "AdyenStore": { "client": "object", "cashAppPayComponent": "object" },
+  "CheckoutRecoveryStore": {
+    "getIsTargeted": "function",
+    "shouldFetchCheckoutRecovery": "function"
+  },
+  "SubscriptionRemindersStore": { "shouldShowReactivateNotice": "function" },
+  "ProxyBlockStore": { "blockedByProxy": "boolean" },
+  "AuthorizedAppsStore": { "initialize": "function", "getApps": "function" },
+  "DetectedOffPlatformPremiumPerksStore": {
+    "initialize": "function",
+    "getDetectedOffPlatformPremiumPerks": "function"
+  },
+  "PremiumPromoStore": { "initialize": "function", "isEligible": "function" },
+  "MaintenanceStore": {
+    "initialize": "function",
+    "getIncident": "function",
+    "getScheduledMaintenance": "function"
+  },
+  "UserRequiredActionStore": {
+    "hasAction": "function",
+    "getAction": "function"
+  },
+  "DispatchApplicationErrorStore": { "getLastError": "function" },
+  "NoticeStore": {
+    "initialize": "function",
+    "hasNotice": "function",
+    "getNotice": "function",
+    "isNoticeDismissed": "function"
+  },
+  "SavedMessagesStore": {
+    "initialize": "function",
+    "getMessageBookmarks": "function",
+    "getMessageReminders": "function",
+    "getOverdueMessageReminderCount": "function",
+    "getLastFetched": "function",
+    "isMessageBookmarked": "function",
+    "isMessageReminder": "function",
+    "hasSentNotification": "function",
+    "getState": "function"
+  },
+  "SendMessageOptionsStore": { "getOptions": "function" },
+  "TTSStore": {
+    "initialize": "function",
+    "isSpeakingMessage": "function",
+    "currentMessage": "object",
+    "speechRate": "number",
+    "getUserAgnosticState": "function"
+  },
+  "MessageRequestPreviewStore": {
+    "initialize": "function",
+    "shouldLoadMessageRequestPreview": "function",
+    "getMessageRequestPreview": "function"
+  },
+  "ForumPostUnreadCountStore": {
+    "initialize": "function",
+    "getCount": "function",
+    "getThreadIdsMissingCounts": "function"
+  },
+  "ChannelSettingsStore": {
+    "initialize": "function",
+    "hasChanges": "function",
+    "isOpen": "function",
+    "getSection": "function",
+    "getInvites": "function",
+    "showNotice": "function",
+    "getChannel": "function",
+    "getFormState": "function",
+    "getCategory": "function",
+    "getProps": "function"
+  },
+  "MediaPostSharePromptStore": { "shouldDisplayPrompt": "function" },
+  "ForumPostRecentMessageStore": {
+    "initialize": "function",
+    "getMessageState": "function"
+  },
+  "TutorialIndicatorStore": {
+    "initialize": "function",
+    "shouldShow": "function",
+    "shouldShowAnyIndicators": "function",
+    "getIndicators": "function",
+    "getData": "function",
+    "getDefinition": "function"
+  },
+  "AppLauncherLastUsedCommandStore": {
+    "initialize": "function",
+    "getState": "function",
+    "getLastUsedCommandId": "function"
+  },
+  "UnreadSettingNoticeStore": {
+    "initialize": "function",
+    "getState": "function",
+    "getNumberOfRenders": "function",
+    "getNumberOfRendersSince": "function",
+    "getNumberOfChannelVisitsSince": "function"
+  },
+  "ClanSetupStore": {
+    "initialize": "function",
+    "getState": "function",
+    "getStateForGuild": "function",
+    "getGuildIds": "function"
+  },
+  "LurkerModePopoutStore": {
+    "initialize": "function",
+    "shouldShowPopout": "function"
+  },
+  "ChannelFollowerStatsStore": { "getFollowerStatsForChannel": "function" },
+  "GameInviteStore": {
+    "getInvites": "function",
+    "getInviteStatuses": "function",
+    "isInviteGameInstalled": "function",
+    "isInviteJoinable": "function",
+    "getLastUnseenInvite": "function",
+    "getUnseenInviteCount": "function"
+  },
+  "RecentMentionsStore": {
+    "initialize": "function",
+    "isOpen": "function",
+    "hasLoadedEver": "boolean",
+    "lastLoaded": "number",
+    "getMentions": "function",
+    "hasMention": "function",
+    "loading": "boolean",
+    "hasMore": "boolean",
+    "guildFilter": "string",
+    "everyoneFilter": "boolean",
+    "roleFilter": "boolean",
+    "mentionsAreStale": "boolean"
+  },
+  "NotificationCenterStore": {
+    "initialize": "function",
+    "getState": "function",
+    "getTab": "function",
+    "isLocalItemAcked": "function",
+    "hasNewMentions": "function",
+    "isDataStale": "function",
+    "isRefreshing": "function",
+    "shouldReload": "function"
+  },
+  "SearchAutocompleteStore": {
+    "initialize": "function",
+    "getState": "function"
+  },
+  "AutoUpdateStore": { "getState": "function" },
+  "GuildDirectorySearchStore": {
+    "getSearchState": "function",
+    "getSearchResults": "function",
+    "shouldFetch": "function"
+  },
+  "GuildDirectoryStore": {
+    "isFetching": "function",
+    "getCurrentCategoryId": "function",
+    "getDirectoryEntries": "function",
+    "getDirectoryEntry": "function",
+    "getDirectoryAllEntriesCount": "function",
+    "getDirectoryCategoryCounts": "function",
+    "getAdminGuildEntryIds": "function"
+  },
+  "MemberSafetyStore": {
+    "initialize": "function",
+    "isInitialized": "function",
+    "getMembersByGuildId": "function",
+    "getMembersCountByGuildId": "function",
+    "getEstimatedMemberSearchCountByGuildId": "function",
+    "getKnownMemberSearchCountByGuildId": "function",
+    "getCurrentMemberSearchResultsByGuildId": "function",
+    "getSearchStateByGuildId": "function",
+    "hasDefaultSearchStateByGuildId": "function",
+    "getPagedMembersByGuildId": "function",
+    "getPaginationStateByGuildId": "function",
+    "getElasticSearchPaginationByGuildId": "function",
+    "getEnhancedMember": "function",
+    "getNewMemberTimestamp": "function",
+    "getLastRefreshTimestamp": "function",
+    "getLastCursorTimestamp": "function"
+  },
+  "GuildSettingsAuditLogStore": {
+    "logs": "object",
+    "integrations": "object",
+    "webhooks": "object",
+    "guildScheduledEvents": "object",
+    "automodRules": "object",
+    "threads": "object",
+    "applicationCommands": "object",
+    "isInitialLoading": "boolean",
+    "isLoading": "boolean",
+    "isLoadingNextPage": "boolean",
+    "hasOlderLogs": "boolean",
+    "hasError": "boolean",
+    "userIds": "object",
+    "userIdFilter": "object",
+    "targetIdFilter": "object",
+    "actionFilter": "object",
+    "deletedTargets": "object",
+    "groupedFetchCount": "number"
+  },
+  "PrivateChannelSortStore": {
+    "initialize": "function",
+    "getPrivateChannelIds": "function",
+    "getSortedChannels": "function",
+    "serializeForOverlay": "function"
+  },
+  "DefaultRouteStore": {
+    "initialize": "function",
+    "defaultRoute": "string",
+    "lastNonVoiceRoute": "string",
+    "fallbackRoute": "string",
+    "getState": "function"
+  },
+  "ForumChannelAdminOnboardingGuideStore": {
+    "initialize": "function",
+    "hasHidden": "function",
+    "getState": "function"
+  },
+  "UserAffinitiesStoreV2": {
+    "initialize": "function",
+    "shouldFetch": "function",
+    "isFetching": "function",
+    "getUserAffinities": "function",
+    "getUserAffinity": "function",
+    "getState": "function"
+  },
+  "PrivateChannelRecipientsInviteStore": {
+    "initialize": "function",
+    "getResults": "function",
+    "hasFriends": "function",
+    "getSelectedUsers": "function",
+    "getQuery": "function",
+    "getState": "function"
+  },
+  "GuildPromptsStore": {
+    "initialize": "function",
+    "hasViewedPrompt": "function",
+    "getState": "function"
+  },
+  "StageMusicStore": {
+    "initialize": "function",
+    "isMuted": "function",
+    "shouldPlay": "function",
+    "getUserAgnosticState": "function"
+  },
+  "WelcomeScreenStore": {
+    "get": "function",
+    "isFetching": "function",
+    "hasError": "function",
+    "hasSeen": "function",
+    "isEmpty": "function"
+  },
+  "ContentInventoryPersistedStore": {
+    "initialize": "function",
+    "getState": "function",
+    "getImpressionCappedItemIds": "function",
+    "getDebugFastImpressionCappingEnabled": "function",
+    "reset": "function"
+  },
+  "GuildRecommendationsStore": {
+    "getRecommendedGuilds": "function",
+    "getLoadId": "function",
+    "isFetching": "function",
+    "failed": "function"
+  },
+  "GuildDiscoveryCategoryStore": {
+    "getPrimaryCategories": "function",
+    "getDiscoveryCategories": "function",
+    "getClanDiscoveryCategories": "function",
+    "getAllCategories": "function",
+    "getFetchedLocale": "function",
+    "getCategoryName": "function"
+  },
+  "ClanDiscoveryStore": {
+    "getSearchResult": "function",
+    "hasLoadedStaticClanDiscovery": "function",
+    "getStaticClans": "function",
+    "isLoading": "function"
+  },
+  "ClanSettingsStore": { "getState": "function" },
+  "GuildDiscoveryInfiniteSearchStore": { "getResults": "function" },
+  "LiveChannelNoticesStore": {
+    "initialize": "function",
+    "isLiveChannelNoticeHidden": "function",
+    "getState": "function"
+  },
+  "CommandsMigrationStore": {
+    "initialize": "function",
+    "getState": "function",
+    "shouldShowChannelNotice": "function",
+    "canShowOverviewTooltip": "function",
+    "canShowToggleTooltip": "function"
+  },
+  "EnablePublicGuildUpsellNoticeStore": {
+    "initialize": "function",
+    "isVisible": "function"
+  },
+  "SignUpStore": {
+    "getActiveUserSignUp": "function",
+    "getActiveGuildSignUp": "function",
+    "hasCompletedTarget": "function"
+  },
+  "AppliedGuildBoostStore": {
+    "getAppliedGuildBoostsForGuild": "function",
+    "getLastFetchedAtForGuild": "function",
+    "getCurrentUserAppliedBoosts": "function",
+    "getAppliedGuildBoost": "function",
+    "isModifyingAppliedBoost": "boolean",
+    "applyBoostError": "object",
+    "unapplyBoostError": "object",
+    "cooldownEndsAt": "object",
+    "isFetchingCurrentUserAppliedBoosts": "boolean"
+  },
+  "GuildBoostingGracePeriodNoticeStore": {
+    "initialize": "function",
+    "getLastDismissedGracePeriodForGuild": "function",
+    "isVisible": "function",
+    "getState": "function"
+  },
+  "GuildMFAWarningStore": { "initialize": "function", "isVisible": "function" },
+  "MaxMemberCountChannelNoticeStore": {
+    "initialize": "function",
+    "isVisible": "function"
+  },
+  "DiscoverGuildChecklistStore": {
+    "isLoading": "function",
+    "passesChecklist": "function",
+    "isPendingSuccess": "function",
+    "getDiscoveryChecklist": "function"
+  },
+  "GuildTemplateTooltipStore": {
+    "shouldShowGuildTemplateDirtyTooltip": "function",
+    "shouldShowGuildTemplatePromotionTooltip": "function"
+  },
+  "GuildBoostingProgressBarPersistedStore": {
+    "initialize": "function",
+    "getState": "function",
+    "getCountForGuild": "function"
+  },
+  "FavoritesSuggestionStore": {
+    "initialize": "function",
+    "getSuggestedChannelId": "function",
+    "getState": "function"
+  },
+  "RecentlyActiveCollapseStore": {
+    "initialize": "function",
+    "isCollapsed": "function",
+    "getState": "function"
+  },
+  "NewChannelsStore": {
+    "initialize": "function",
+    "getNewChannelIds": "function",
+    "shouldIndicateNewChannel": "function"
+  },
+  "CollapsedVoiceChannelStore": {
+    "initialize": "function",
+    "getState": "function",
+    "getCollapsed": "function",
+    "isCollapsed": "function"
+  },
+  "ChannelListVoiceCategoryStore": {
+    "initialize": "function",
+    "isVoiceCategoryExpanded": "function",
+    "isVoiceCategoryCollapsed": "function",
+    "getState": "function"
+  },
+  "ChannelListStore": {
+    "initialize": "function",
+    "getGuild": "function",
+    "getGuildWithoutChangingCommunityRows": "function",
+    "recentsChannelCount": "function"
+  },
+  "ChannelListUnreadsStore": {
+    "initialize": "function",
+    "getUnreadStateForGuildId": "function"
+  },
+  "GuildReadStateStore": {
+    "initialize": "function",
+    "loadCache": "function",
+    "takeSnapshot": "function",
+    "hasAnyUnread": "function",
+    "getStoreChangeSentinel": "function",
+    "getMutableUnreadGuilds": "function",
+    "getMutableGuildStates": "function",
+    "hasUnread": "function",
+    "getMentionCount": "function",
+    "getMutableGuildReadState": "function",
+    "getGuildHasUnreadIgnoreMuted": "function",
+    "getTotalMentionCount": "function",
+    "getTotalNotificationsMentionCount": "function",
+    "getPrivateChannelMentionCount": "function",
+    "getMentionCountForChannels": "function",
+    "getMentionCountForPrivateChannel": "function",
+    "getGuildChangeSentinel": "function"
+  },
+  "GuildBoostingNoticeStore": {
+    "initialize": "function",
+    "channelNoticePredicate": "function"
+  },
+  "GuildOnboardingUpsellNoticeStore": {
+    "initialize": "function",
+    "channelNoticePredicate": "function"
+  },
+  "HubLinkNoticeStore": {
+    "initialize": "function",
+    "channelNoticePredicate": "function"
+  },
+  "InviteNoticeStore": {
+    "initialize": "function",
+    "channelNoticePredicate": "function"
+  },
+  "PrivateChannelReadStateStore": {
+    "initialize": "function",
+    "getUnreadPrivateChannelIds": "function"
+  },
+  "ViewHistoryStore": {
+    "initialize": "function",
+    "getState": "function",
+    "hasViewed": "function"
+  },
+  "AppViewStore": { "initialize": "function", "getHomeLink": "function" },
+  "LoginRequiredActionStore": {
+    "initialize": "function",
+    "requiredActions": "function",
+    "requiredActionsIncludes": "function",
+    "wasLoginAttemptedInSession": "function",
+    "getState": "function"
+  },
+  "MobileWebSidebarStore": { "getIsOpen": "function" },
+  "FamilyCenterStore": {
+    "initialize": "function",
+    "loadCache": "function",
+    "takeSnapshot": "function",
+    "getSelectedTeenId": "function",
+    "getLinkedUsers": "function",
+    "getLinkTimestamp": "function",
+    "getRangeStartTimestamp": "function",
+    "getActionsForDisplayType": "function",
+    "getTotalForDisplayType": "function",
+    "getLinkCode": "function",
+    "getGuild": "function",
+    "getSelectedTab": "function",
+    "getStartId": "function",
+    "getIsInitialized": "function",
+    "getUserCountry": "function",
+    "isLoading": "function",
+    "canRefetch": "function"
+  },
+  "EmailSettingsStore": { "getEmailSettings": "function" },
+  "FriendSuggestionStore": {
+    "initialize": "function",
+    "getSuggestionCount": "function",
+    "getSuggestions": "function",
+    "getSuggestion": "function"
+  },
+  "NowPlayingViewStore": {
+    "initialize": "function",
+    "currentActivityParties": "object",
+    "nowPlayingCards": "object",
+    "isMounted": "boolean",
+    "loaded": "boolean"
+  },
+  "FriendsStore": { "initialize": "function", "getState": "function" },
+  "PerksRelevanceStore": {
+    "initialize": "function",
+    "hasFetchedRelevance": "boolean",
+    "profileThemesRelevanceExceeded": "object",
+    "getState": "function"
+  },
+  "OverlayRTCConnectionStore": {
+    "getConnectionState": "function",
+    "getQuality": "function",
+    "getHostname": "function",
+    "getPings": "function",
+    "getAveragePing": "function",
+    "getLastPing": "function",
+    "getOutboundLossRate": "function"
+  },
+  "ChannelSKUStore": { "getSkuIdForChannel": "function" },
+  "ApplicationStatisticsStore": {
+    "getStatisticsForApplication": "function",
+    "shouldFetchStatisticsForApplication": "function"
+  },
+  "NowPlayingStore": {
+    "initialize": "function",
+    "games": "object",
+    "usersPlaying": "object",
+    "gameIds": "object",
+    "getNowPlaying": "function",
+    "getUserGame": "function"
+  },
+  "ApplicationStoreLocationStore": {
+    "getCurrentPath": "function",
+    "getCurrentRoute": "function",
+    "reset": "function"
+  },
+  "TenureRewardStore": {
+    "initialize": "function",
+    "getState": "function",
+    "getFetchState": "function",
+    "getTenureRewardStatusForRewardId": "function"
+  },
+  "ActivitiesWhatsNewStore": {
+    "initialize": "function",
+    "getState": "function",
+    "getOpened": "function",
+    "getAcknowledged": "function",
+    "isOpened": "function",
+    "isAcknowledged": "function"
+  },
+  "NewUserStore": {
+    "initialize": "function",
+    "getType": "function",
+    "getState": "function"
+  },
+  "PoggermodeAchievementStore": {
+    "initialize": "function",
+    "getState": "function",
+    "getAllUnlockedAchievements": "function",
+    "getUnlocked": "function"
+  },
+  "ConnectedDeviceStore": {
+    "initialize": "function",
+    "getUserAgnosticState": "function",
+    "initialized": "boolean",
+    "lastDeviceConnected": "object",
+    "inputDevices": "object",
+    "lastInputSystemDevice": "object",
+    "outputDevices": "object",
+    "lastOutputSystemDevice": "object"
+  },
+  "NotificationStore": { "initialize": "function" },
+  "UserAchievementStore": {},
+  "StreamingCapabilitiesStore": {
+    "initialize": "function",
+    "GPUDriversOutdated": "boolean",
+    "canUseHardwareAcceleration": "boolean",
+    "problematicGPUDriver": "boolean",
+    "getState": "function"
+  },
+  "WebhooksStore": {
+    "isFetching": "function",
+    "getWebhooksForGuild": "function",
+    "getWebhooksForChannel": "function",
+    "error": "undefined"
+  },
+  "ChannelSettingsIntegrationsStore": {
+    "initialize": "function",
+    "hasChanges": "function",
+    "webhooks": "object",
+    "editedWebhook": "object",
+    "formState": "string",
+    "getWebhook": "function",
+    "showNotice": "function",
+    "getProps": "function"
+  },
+  "ChannelSettingsPermissionsStore": {
+    "initialize": "function",
+    "hasChanges": "function",
+    "showNotice": "function",
+    "getPermissionOverwrite": "function",
+    "editedPermissionIds": "object",
+    "permissionOverwrites": "object",
+    "selectedOverwriteId": "object",
+    "formState": "string",
+    "isLockable": "undefined",
+    "locked": "undefined",
+    "channel": "object",
+    "category": "object",
+    "advancedMode": "boolean"
+  },
+  "CacheStore": {
+    "initialize": "function",
+    "hasCache": "function",
+    "getLazyCacheStatus": "function",
+    "lastWriteTime": "number",
+    "canWriteCaches": "function",
+    "loadCacheAsync": "function"
+  },
+  "GravityUnreadStateStore": {
+    "initialize": "function",
+    "getReadTimestamp": "function",
+    "compare": "function",
+    "getState": "function",
+    "getUserAgnosticState": "function"
+  },
+  "LabFeatureStore": {
+    "getUserAgnosticState": "function",
+    "initialize": "function",
+    "get": "function",
+    "set": "function"
+  },
+  "GravityFiltersStore": {
+    "initialize": "function",
+    "filterNSFW": "function",
+    "negativeContentOnly": "function",
+    "getState": "function",
+    "getUserAgnosticState": "function"
+  },
+  "GravityStore": {
+    "initialize": "function",
+    "getVersion": "function",
+    "getDehydratedItems": "function",
+    "getNewDehydratedItems": "function",
+    "getDehydratedItem": "function",
+    "getHydratedItem": "function",
+    "getMessage": "function",
+    "getHydratedItems": "function",
+    "getUnreadDisplayItems": "function",
+    "getReadDisplayItems": "function",
+    "getNextIndexToHydrate": "function",
+    "getMissingItems": "function",
+    "getCustomChannelScore": "function",
+    "getCustomChannelScores": "function",
+    "getCustomGuildScore": "function",
+    "getNumLocallyAddedItems": "function",
+    "hasNewContent": "function",
+    "getSelectedSummary": "function",
+    "isGravitySelectedChannel": "function",
+    "getLoadId": "function",
+    "hasOpenedEnoughTimes": "function",
+    "hasOpened": "function",
+    "getState": "function"
+  },
+  "ActiveChannelsStore": {
+    "getActiveChannelsFetchStatus": "function",
+    "getActiveChannelIds": "function",
+    "getChannelMessageData": "function",
+    "shouldFetch": "function"
+  },
+  "GuildProgressStore": {
+    "initialize": "function",
+    "getProgress": "function",
+    "hasProgress": "function",
+    "getState": "function"
+  },
+  "HabitualDNDStore": {
+    "initialize": "function",
+    "showNagBar": "function",
+    "getState": "function",
+    "getTemp": "function"
+  },
+  "PhoneStore": {
+    "initialize": "function",
+    "getUserAgnosticState": "function",
+    "getCountryCode": "function"
+  },
+  "ActivityTrackingStore": {
+    "initialize": "function",
+    "getActivities": "function"
+  },
+  "GuildAffinitiesStore": {
+    "initialize": "function",
+    "getState": "function",
+    "getGuildAffinity": "function",
+    "affinities": "object",
+    "hasRequestResolved": "boolean"
+  },
+  "HypeSquadStore": { "getHouseMembership": "function" },
+  "PurchasedItemsFestivityStore": {
+    "initialize": "function",
+    "getState": "function",
+    "canPlayWowMoment": "boolean",
+    "isFetchingWowMomentMedia": "boolean",
+    "wowMomentWumpusMedia": "object"
+  },
+  "RTCSpeedTestStore": {
+    "initialize": "function",
+    "getAvailable": "function",
+    "getActive": "function",
+    "getEndpoint": "function",
+    "getConnected": "function",
+    "getLifecycle": "function",
+    "getFailed": "function",
+    "getCurrentTest": "function",
+    "getTestCases": "function",
+    "getTestResults": "function",
+    "getPings": "function",
+    "getNotes": "function",
+    "setNotes": "function",
+    "isSupported": "function"
+  },
+  "MFAStore": {
+    "getVerificationKey": "function",
+    "getBackupCodes": "function",
+    "togglingSMS": "boolean",
+    "getNonces": "function",
+    "emailToken": "string",
+    "hasSeenBackupPrompt": "boolean"
+  },
+  "WebAuthnStore": {
+    "hasFetchedCredentials": "function",
+    "getCredentials": "function"
+  },
+  "PaymentStore": { "getPayment": "function", "getPayments": "function" },
+  "SafetyHubStore": {
+    "isFetching": "function",
+    "getClassifications": "function",
+    "getClassification": "function",
+    "getAccountStanding": "function",
+    "getFetchError": "function",
+    "isInitialized": "function",
+    "getClassificationRequestState": "function",
+    "getAppealClassificationId": "function",
+    "getIsDsaEligible": "function",
+    "getAppealSignal": "function",
+    "getFreeTextAppealReason": "function",
+    "getIsSubmitting": "function",
+    "getSubmitError": "function"
+  },
+  "AuthSessionsStore": { "getSessions": "function" },
+  "IntegrationPermissionStore": {
+    "getApplicationPermissions": "function",
+    "getCommands": "function",
+    "getCommand": "function",
+    "getEditedApplication": "function",
+    "getEditedCommand": "function",
+    "isUnavailable": "function",
+    "getApplicationId": "function"
+  },
+  "GuildSettingsIntegrationsStore": {
+    "initialize": "function",
+    "hasChanges": "function",
+    "guild": "undefined",
+    "integrations": "object",
+    "webhooks": "object",
+    "editedCommandId": "object",
+    "editedIntegration": "object",
+    "editedWebhook": "object",
+    "formState": "string",
+    "getErrors": "function",
+    "getSection": "function",
+    "getSectionId": "function",
+    "getIntegration": "function",
+    "getWebhook": "function",
+    "isFetching": "function",
+    "showNotice": "function",
+    "getApplication": "function"
+  },
+  "InviteSuggestionsStore": {
+    "initialize": "function",
+    "getInviteSuggestionRows": "function",
+    "getTotalSuggestionsCount": "function",
+    "getInitialCounts": "function",
+    "getSelectedInviteMetadata": "function"
+  },
+  "GuildSettingsEmojiStore": {
+    "initialize": "function",
+    "isUploadingEmoji": "function",
+    "getEmojiRevision": "function",
+    "getEmojis": "function"
+  },
+  "WelcomeScreenSettingsStore": {
+    "initialize": "function",
+    "get": "function",
+    "showNotice": "function",
+    "getSettingsProps": "function"
+  },
+  "GuildSettingsAnalyticsStore": {
+    "getOverviewAnalytics": "function",
+    "getMemberInsights": "function",
+    "shouldFetchMemberInsights": "function",
+    "getError": "function"
+  },
+  "GuildRoleConnectionsConfigurationStore": {
+    "initialize": "function",
+    "getGuildRoleConnectionsConfiguration": "function"
+  },
+  "GuildSettingsRolesStore": {
+    "initialize": "function",
+    "hasChanges": "function",
+    "errorMessage": "undefined",
+    "hasSortChanges": "boolean",
+    "hasRoleConfigurationChanges": "boolean",
+    "guild": "undefined",
+    "editedRoleIds": "object",
+    "editedRoleIdsForConfigurations": "object",
+    "roles": "object",
+    "formState": "string",
+    "getSortDeltas": "function",
+    "showNotice": "function",
+    "getRole": "function",
+    "getPermissionSearchQuery": "function",
+    "getEditedRoleConnectionConfigurationsMap": "function"
+  },
+  "GuildSettingsVanityURLStore": {
+    "showNotice": "function",
+    "vanityURLCode": "object",
+    "originalVanityURLCode": "object",
+    "vanityURLUses": "number",
+    "hasError": "function",
+    "errorDetails": "object"
+  },
+  "GuildSettingsSafetyStore": { "getCurrentPage": "function" },
+  "GuildSettingsDefaultChannelsStore": {
+    "initialize": "function",
+    "hasChanges": "function",
+    "guildId": "object",
+    "submitting": "boolean",
+    "editedDefaultChannelIds": "object"
+  },
+  "GuildSettingsOnboardingHomeSettingsStore": {
+    "initialize": "function",
+    "getState": "function",
+    "getSettings": "function",
+    "hasChanges": "function",
+    "getSubmitting": "function",
+    "getDismissedSuggestedChannelIds": "function",
+    "getResourceChannel": "function",
+    "getNewMemberAction": "function"
+  },
+  "GuildSettingsOnboardingPromptsStore": {
+    "initialize": "function",
+    "hasChanges": "function",
+    "guildId": "object",
+    "submitting": "boolean",
+    "errors": "object",
+    "editedOnboardingPrompts": "object",
+    "advancedMode": "boolean"
+  },
+  "GuildSettingsOnboardingStore": {
+    "initialize": "function",
+    "isEducationUpsellDismissed": "function",
+    "getCurrentPage": "function",
+    "hasChanges": "function",
+    "hasConfiguredAnythingForCurrentStep": "function",
+    "hasErrors": "function",
+    "showNotice": "function",
+    "canCloseEarly": "function"
+  },
+  "DiscoverGuildsStore": {
+    "initialize": "function",
+    "isFetching": "function",
+    "getGuild": "function",
+    "getGuilds": "function"
+  },
+  "GuildSettingsTemplateMetadataStore_": {
+    "getTemplate": "function",
+    "showNotice": "function"
+  }
+}
