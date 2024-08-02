@@ -13,7 +13,7 @@ import { LogoMap } from "./symbols";
  * @param func The function to wrap
  * @param delay The delay in milliseconds
  */
-export function debounce<T extends Function>(func: T, delay = 300): T {
+function debounce<T extends Function>(func: T, delay = 300): T {
     let timeout: NodeJS.Timeout;
     return function (...args: any[]) {
         clearTimeout(timeout);
